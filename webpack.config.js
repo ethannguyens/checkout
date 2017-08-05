@@ -63,10 +63,10 @@ const dev = {
   ]
 };
 
-let configuration = base;
+let configuration = prod;
 
 if (process.env.NODE_ENV === 'dev') {
-  configuration = Object.assign({}, base, dev);
+  configuration = Object.assign({}, prod, dev);
 }
 
 export default configuration;
