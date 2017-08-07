@@ -7,8 +7,6 @@ import {Provider} from 'react-redux';
 import { Router, browserHistory } from 'react-router';
 import routes from './routes';
 
-require('./styles/main.scss');
-
 const store = configureStore();
 
 render(

@@ -5,6 +5,7 @@ import config from '../webpack.config';
 import open from 'open';
 
 /* eslint-disable no-console */
+process.env.NODE_ENV = 'dev';
 
 const port = 3000;
 const app = express();
