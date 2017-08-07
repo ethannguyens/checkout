@@ -21,7 +21,7 @@ class App extends React.Component {
   render() {
     return (
       <div className={`nguyene`}>
-        ETHAN NGUYEN
+        APP
         {this.props.children}
       </div>
     );

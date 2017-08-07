@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Delivery extends React.comments {
+class Delivery extends React.Component {
   constructor() {
     super();
   }

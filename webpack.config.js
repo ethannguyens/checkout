@@ -4,6 +4,7 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
 //Default Production
 const prod = {
+  devtool: 'source-map',
   entry: './src/index',
   target: 'web',
   resolve: {
@@ -18,6 +19,7 @@ const prod = {
     contentBase: './dist'
   },
   plugins: [
+    new webpack.ProgressPlugin({ profile: false }),
     new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify('production')
@@ -48,6 +50,7 @@ const prod = {
 
 //Altering for development
 const dev = {
+  devtool: ' cheap-module-source-map',
   entry: [
     'eventsource-polyfill', // necessary for hot reloading with IE
     'webpack-hot-middleware/client?reload=true', //note that it reloads the page if hot module reloading fails.
@@ -58,8 +61,9 @@ const dev = {
     headers: { "Access-Control-Allow-Origin": "http://localhost:3000", "Access-Control-Allow-Credentials": "true" }
   },
   plugins: [
+    new webpack.ProgressPlugin({ profile: false }),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoEmitOnErrorsPlugin()
   ]
 };
 
