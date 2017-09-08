@@ -21,7 +21,7 @@ class App extends React.Component {
   render() {
     return (
       <div className={`nguyene`}>
-        APP
+        CHECK OUT SINGLE PAGE APP
         {this.props.children}
       </div>
     );
