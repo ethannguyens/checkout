@@ -1,15 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import * as courseActions from '../../actions/pudoActions';
+import * as pudoActions from '../../actions/pudoActions';
 import PudoSavedAddresses from './PudoSavedAddresses';
-import getPudoSavedAddresses from '../../api/PudoApi';
 
 import './pudo.scss';
 
 class Pudo extends React.Component {
-  constructor() {
-    super();
+  constructor(props, context) {
+    super(props, context);
   }
 
   componentDidMount() {
@@ -21,24 +21,32 @@ class Pudo extends React.Component {
   }
 
   render() {
+    const {pudoSavedAddresses} = this.props;
+
     return (
       <div className="pudo">
-        <PudoSavedAddresses addresses={this.addresses}/>
+        <PudoSavedAddresses addresses={pudoSavedAddresses}/>
         <button className="PudoAddCollectionPoint" onClick={this.addNewCollection}>+Add a collection point</button>
       </div>
     )
   }
 }
 
+Pudo.propTypes = {
+  pudoSavedAddresses: PropTypes.array.isRequired,
+  actions: PropTypes.object.isRequired
+};
+
+
 function mapStateToProps(state, ownProps) {
   return {
-    courses: state.courses
+    pudoSavedAddresses: state.pudoSavedAddresses
   };
 }
 
 function mapDispatchToProps(dispatch) {
   return {
-    actions: bindActionCreators(courseActions, dispatch)
+    actions: bindActionCreators(pudoActions, dispatch)
   };
 }
 
