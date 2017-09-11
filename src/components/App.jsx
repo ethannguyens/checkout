@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {isTouchDevice} from '../modules/utility';
 
+import '../styles/main.scss';
+
 class App extends React.Component {
   constructor() {
     super();

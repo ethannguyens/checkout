@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types';
 
 function textIt(value) {
-  return value ? `${value} ,` : "";
+  return value ? `${value}, ` : "";
 }
 
 const PudoSavedAddressText = ({addressee, nameNumber, line1, line2, line3, line4, postcode, countryName}) => {
@@ -15,16 +15,14 @@ const PudoSavedAddressText = ({addressee, nameNumber, line1, line2, line3, line4
         {textIt(line2)}
         {textIt(line3)}
         {textIt(line4)}
-        {textIt(postCode)}
+        {textIt(postcode)}
         {countryName}
       </span>
     </div>
-
   )
 };
 
 PudoSavedAddressText.propTypes = {
-  addressId: PropTypes.string.isRequired,
   addressee: PropTypes.string,
   nameNumber: PropTypes.string,
   line1: PropTypes.string,

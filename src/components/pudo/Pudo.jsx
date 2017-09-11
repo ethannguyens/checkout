@@ -2,6 +2,8 @@ import React from 'react';
 import PudoSavedAddresses from './PudoSavedAddresses';
 import getPudoSavedAddresses from '../../api/getPudoSavedAddresses';
 
+import './pudo.scss';
+
 class Pudo extends React.Component {
   constructor() {
     super();

@@ -1,6 +1,6 @@
 
 const mockPudoSavedAddresses = [{
-  "addressId": "",
+  "addressId": "101",
   "addressee": "WELDOM",
   "buildingNameNumber": "77",
   "organisationName": "",
@@ -12,7 +12,7 @@ const mockPudoSavedAddresses = [{
   "countryName": "FRANCE",
   "countryCode": "FR"
 },{
-  "addressId": "",
+  "addressId": "102",
   "addressee": "PUDO",
   "buildingNameNumber": "77",
   "organisationName": "",

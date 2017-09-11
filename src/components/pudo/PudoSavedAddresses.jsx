@@ -2,10 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import PudoSavedAddressList from './PudoSavedAddressList';
 
-const PudoSavedAddresses = (addresses) => {
-  console.log(addresses);
+const PudoSavedAddresses = ({addresses}) => {
   const listAddresses = addresses.map((address, index)=>
-    <PudoSavedAddressList key={index} address={address}/>
+    <PudoSavedAddressList key={index} index={index} address={address}/>
   );
 
   return (
