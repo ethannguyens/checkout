@@ -1,5 +1,5 @@
 
-const mockPudoSavedAddresses = [{
+const pudoSavedAddresses = [{
   "addressId": "101",
   "addressee": "WELDOM",
   "buildingNameNumber": "77",
@@ -25,8 +25,12 @@ const mockPudoSavedAddresses = [{
   "countryCode": "GB"
 }];
 
-const getPudoSavedAddresses = () => {
-  return mockPudoSavedAddresses;
-};
+class PudoApi {
+  static getAllPudoSavedAddresses() {
+    return new Promise((resolve, reject) => {
+        resolve(Object.assign([], pudoSavedAddresses));
+    });
+  }
+}
 
-export default getPudoSavedAddresses;
+export default PudoApi;
