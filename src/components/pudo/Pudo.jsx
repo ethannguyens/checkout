@@ -41,7 +41,7 @@ Pudo.propTypes = {
 
 function mapStateToProps(state, ownProps) {
   return {
-    pudoSavedAddresses: state.pudoSavedAddresses
+    pudoSavedAddresses: state.pudo.savedAddresses
   };
 }
 

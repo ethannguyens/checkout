@@ -63,6 +63,7 @@ class PudoApi {
       if ("geolocation" in navigator) {
         navigator.geolocation.getCurrentPosition((position) => {
           const latlng = {lat: position.coords.latitude, lng: position.coords.longitude};
+
           getAddress(latlng).then(address => resolve(address))
             .catch(err => reject(err));
         });

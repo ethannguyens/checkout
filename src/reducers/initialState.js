@@ -1,4 +1,7 @@
 export default {
-  pudoSavedAddresses: [],
+  pudo: {
+    savedAddresses: [],
+    currentLocation: false
+  },
   ajaxCallsInProgress: 0
 };
