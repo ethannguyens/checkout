@@ -18,6 +18,7 @@ class Pudo extends React.Component {
 
   addNewCollection() {
     console.log('addNewCollection');
+
   }
 
   render() {
