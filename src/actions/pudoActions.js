@@ -14,6 +14,16 @@ export function getPudoCollectionPointsSuccess(collectionPoints) {
   return {type: types.GET_PUDO_COLLECTION_POINTS_SUCCESS, collectionPoints};
 }
 
+export function activateAddCollectionPoint() {
+  const isAddCollectionPoint = true;
+  return {type: types.ACTIVATE_ADD_COLLECTION_POINT, isAddCollectionPoint};
+}
+
+export function deactivateAddCollectionPoint() {
+  const isAddCollectionPoint = false;
+  return {type: types.DEACTIVATE_ADD_COLLECTION_POINT, isAddCollectionPoint};
+}
+
 export function loadPudoSavedAddresses() {
   return dispatch => {
     dispatch(beginAjaxCall());

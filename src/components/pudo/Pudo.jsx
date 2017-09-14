@@ -10,38 +10,46 @@ import './pudo.scss';
 class Pudo extends React.Component {
   constructor(props, context) {
     super(props, context);
+
+    this.activateAddCollectionPoint = this.activateAddCollectionPoint.bind(this);
   }
 
   componentDidMount() {
 
   }
 
-  addNewCollection() {
+  activateAddCollectionPoint() {
     console.log('addNewCollection');
-
+    this.props.actions.activateAddCollectionPoint();
   }
 
   render() {
-    const {pudoSavedAddresses} = this.props;
+    const {savedAddresses} = this.props.pudo;
+
+    let newCollectionPoint = null;
+    if (this.props.pudo.isAddCollectionPoint) {
+      newCollectionPoint = 'NEW COLLECTION POINT'
+    }
 
     return (
       <div className="pudo">
-        <PudoSavedAddresses addresses={pudoSavedAddresses}/>
-        <button className="PudoAddCollectionPoint" onClick={this.addNewCollection}>+Add a collection point</button>
+        <PudoSavedAddresses addresses={savedAddresses}/>
+        <button className="PudoAddCollectionPoint" onClick={this.activateAddCollectionPoint}>+Add a collection point</button>
+        {newCollectionPoint}
       </div>
     )
   }
 }
 
 Pudo.propTypes = {
-  pudoSavedAddresses: PropTypes.array.isRequired,
+  pudo: PropTypes.object.isRequired,
   actions: PropTypes.object.isRequired
 };
 
 
 function mapStateToProps(state, ownProps) {
   return {
-    pudoSavedAddresses: state.pudo.savedAddresses
+    pudo: state.pudo
   };
 }
 
