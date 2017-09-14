@@ -1,32 +1,8 @@
 import * as secrets from '../modules/secrets';
+import mockSavedAddresses from './mockSavedAddresses';
+import mockCollectionPoints from './mockCollectionPoints';
 
 let GoogleMapsLoader = require('google-maps');
-
-const pudoSavedAddresses = [{
-  "addressId": "101",
-  "addressee": "WELDOM",
-  "buildingNameNumber": "77",
-  "organisationName": "",
-  "line1": "AVENUE DU GENERAL DE GAULLE",
-  "line2": "BOFFERON FRUITS",
-  "line3": "ROYERES",
-  "line4": "",
-  "postcode": "87400",
-  "countryName": "FRANCE",
-  "countryCode": "FR"
-}, {
-  "addressId": "102",
-  "addressee": "PUDO",
-  "buildingNameNumber": "77",
-  "organisationName": "",
-  "line1": "AVENUE DU GENERAL DE GAULLE",
-  "line2": "BOFFERON FRUITS",
-  "line3": "ROYERES",
-  "line4": "",
-  "postcode": "87400",
-  "countryName": "UK",
-  "countryCode": "GB"
-}];
 
 GoogleMapsLoader.KEY = secrets.googleKey;
 
@@ -54,7 +30,7 @@ function getAddress(latlng) {
 class PudoApi {
   static getAllPudoSavedAddresses() {
     return new Promise((resolve, reject) => {
-      resolve(Object.assign([], pudoSavedAddresses));
+      resolve(Object.assign([], mockSavedAddresses));
     });
   }
 
@@ -69,6 +45,12 @@ class PudoApi {
         });
       } else reject(false);
     });
+  }
+
+  static getCollectionPoints(postcode) {
+    return new Promise((resolve, reject) => {
+      resolve(mockCollectionPoints);
+    })
   }
 }
 

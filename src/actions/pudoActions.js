@@ -10,6 +10,10 @@ export function getPudoCurrentLocationSuccess(currentLocation) {
   return {type: types.GET_PUDO_CURRENT_POSITION_SUCCESS, currentLocation};
 }
 
+export function getPudoCollectionPointsSuccess(collectionPoints) {
+  return {type: types.GET_PUDO_COLLECTION_POINTS_SUCCESS, collectionPoints};
+}
+
 export function loadPudoSavedAddresses() {
   return dispatch => {
     dispatch(beginAjaxCall());
@@ -25,6 +29,16 @@ export function getPudoCurrentLocation() {
   return dispatch => {
     return PudoApi.getCurrentLocation().then(currentLocation => {
       dispatch(getPudoCurrentLocationSuccess(currentLocation))
+    }).catch(error => {
+      console.log(error);
+    });
+  }
+}
+
+export function getPudoLocationPoints() {
+  return dispatch => {
+    return PudoApi.getCollectionPoints().then(collectionPoinnts => {
+      dispatch(getPudoCollectionPointsSuccess(collectionPoinnts))
     }).catch(error => {
       console.log(error);
     });

@@ -1,7 +1,8 @@
 export default {
   pudo: {
     savedAddresses: [],
-    currentLocation: false
+    currentLocation: false,
+    collectionPoints: []
   },
   ajaxCallsInProgress: 0
 };
