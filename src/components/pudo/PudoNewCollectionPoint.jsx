@@ -2,8 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import PudoNewCollectionPointPostcode from './PudoNewCollectionPointPostcode';
 import * as pudoActions from '../../actions/pudoActions';
+import PudoNewCollectionPointPostcode from './PudoNewCollectionPointPostcode';
+import PudoNewCollectionPointMap from './PudoNewCollectionPointMap';
 
 
 class PudoNewCollectionPoint extends React.Component {
@@ -15,6 +16,7 @@ class PudoNewCollectionPoint extends React.Component {
     return(
     <div className="pudoAddCollectionPoint">
       <PudoNewCollectionPointPostcode />
+      <PudoNewCollectionPointMap />
     </div>
     )
   }

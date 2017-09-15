@@ -15,7 +15,12 @@ function getAddress(latlng) {
       geocoder.geocode({'location': latlng}, function(results, status) {
         if (status === 'OK') {
           if (results[0]) {
-            resolve(results[0].formatted_address);
+            console.log(results[0]);
+            const address = results[0].address_components;
+            const postcode = address[address.length - 1].long_name;
+            console.log(postcode);
+            resolve(results[0].formatted_address, postcode);
+
           } else {
             reject(false)
           }
@@ -38,9 +43,15 @@ class PudoApi {
     return new Promise((resolve, reject) => {
       if ("geolocation" in navigator) {
         navigator.geolocation.getCurrentPosition((position) => {
-          const latlng = {lat: position.coords.latitude, lng: position.coords.longitude};
+          let currentLocation = {};
+          currentLocation['latlng'] = {lat: position.coords.latitude, lng: position.coords.longitude};
 
-          getAddress(latlng).then(address => resolve(address))
+          getAddress(currentLocation.latlng).then((address, postcode) => {
+            currentLocation['address'] = address;
+            currentLocation['postcode'] = postcode;
+            console.log(currentLocation);
+            resolve(currentLocation);
+          })
             .catch(err => reject(err));
         });
       } else reject(false);
