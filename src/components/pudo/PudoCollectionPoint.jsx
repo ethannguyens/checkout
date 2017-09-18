@@ -8,24 +8,10 @@ import PudoNewCollectionPointMarker from './PudoNewCollectionPointMarker';
 
 
 
-class PudoCollectionPoint extends React.Component {
-  constructor(props, context) {
-    super(props, context);
-
-    this.deactivateCollectionPointInfo = this.deactivateCollectionPointInfo.bind(this);
-  }
-
-  deactivateCollectionPointInfo() {
-    this.props.actions.deactivateCollectionPointInfo();
-  }
-
-  render() {
-    const selectedCollectionPoint = this.props.pudo.selectedCollectionPoint;
-
-    return(
+const PudoCollectionPoint = (({selectedCollectionPoint, deactivateCollectionPointInfo}) => (
       <div className="pudoCollectionPoint">
         <div className="pudoCollectionPointMenu">
-          <button onClick={this.deactivateCollectionPointInfo} className="pudoCollectionPointMenu-back">Back</button>
+          <button onClick={deactivateCollectionPointInfo} className="pudoCollectionPointMenu-back">Back</button>
         </div>
         <div className="pudoCollectionPointInfo">
           <img src="" alt="" className="pudoCollectionPointInfo-img"/>
@@ -53,26 +39,13 @@ class PudoCollectionPoint extends React.Component {
         </div>
         <button className="pudoCollectionPointSelect">Select</button>
       </div>
-    )
-  }
-}
+    ));
 
 PudoCollectionPoint.propTypes = {
-  pudo: PropTypes.object.isRequired,
-  actions: PropTypes.object.isRequired
 };
 
+export default PudoCollectionPoint;
 
-function mapStateToProps(state, ownProps) {
-  return {
-    pudo: state.pudo
-  };
-}
 
-function mapDispatchToProps(dispatch) {
-  return {
-    actions: bindActionCreators(pudoActions, dispatch)
-  };
-}
 
-export default connect(mapStateToProps, mapDispatchToProps)(PudoCollectionPoint);
+

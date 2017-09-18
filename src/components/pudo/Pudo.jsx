@@ -16,26 +16,22 @@ class Pudo extends React.Component {
     this.activateAddCollectionPoint = this.activateAddCollectionPoint.bind(this);
   }
 
-  componentDidMount() {
-
-  }
-
   activateAddCollectionPoint() {
     console.log('addNewCollection');
     this.props.actions.activateAddCollectionPoint();
   }
 
   render() {
-    const {savedAddresses} = this.props.pudo;
-    const {isAddCollectionPoint} = this.props.pudo;
-    const {isCollectionPointInfo} = this.props.pudo;
+    const pudo = this.props.pudo;
+    const actions = this.props.actions;
 
     return (
       <div className="pudo">
-        <PudoSavedAddresses addresses={savedAddresses}/>
-        <button className="PudoAddCollectionPoint" onClick={this.activateAddCollectionPoint}>+Add a collection point</button>
-        {isAddCollectionPoint && <PudoNewCollectionPoint />}
-        {isCollectionPointInfo && <PudoCollectionPoint />}
+        <PudoSavedAddresses addresses={pudo.savedAddresses}/>
+        <button className="PudoAddCollectionPoint" onClick={actions.activateAddCollectionPoint}>+Add a collection point</button>
+        {pudo.isAddCollectionPoint && <PudoNewCollectionPoint />}
+        {pudo.isCollectionPointInfo && <PudoCollectionPoint selectedCollectionPoint={pudo.selectedCollectionPoint}
+                                                       deactivateCollectionPointInfo={actions.deactivateCollectionPointInfo}/>}
       </div>
     )
   }

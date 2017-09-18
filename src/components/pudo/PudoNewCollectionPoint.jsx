@@ -7,37 +7,14 @@ import PudoNewCollectionPointPostcode from './PudoNewCollectionPointPostcode';
 import PudoNewCollectionPointMap from './PudoNewCollectionPointMap';
 
 
-class PudoNewCollectionPoint extends React.Component {
-  constructor(props, context) {
-    super(props, context)
-  }
-
-  render() {
-    return(
+const PudoNewCollectionPoint = () => (
     <div className="pudoAddCollectionPoint">
       <PudoNewCollectionPointPostcode />
       <PudoNewCollectionPointMap />
     </div>
-    )
-  }
-}
+    );
 
 PudoNewCollectionPoint.propTypes = {
-  pudo: PropTypes.object.isRequired,
-  actions: PropTypes.object.isRequired
 };
 
-
-function mapStateToProps(state, ownProps) {
-  return {
-    pudo: state.pudo
-  };
-}
-
-function mapDispatchToProps(dispatch) {
-  return {
-    actions: bindActionCreators(pudoActions, dispatch)
-  };
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(PudoNewCollectionPoint);
+export default PudoNewCollectionPoint;
