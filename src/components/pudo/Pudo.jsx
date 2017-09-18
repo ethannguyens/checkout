@@ -5,6 +5,7 @@ import {bindActionCreators} from 'redux';
 import * as pudoActions from '../../actions/pudoActions';
 import PudoSavedAddresses from './PudoSavedAddresses';
 import PudoNewCollectionPoint from './PudoNewCollectionPoint';
+import PudoCollectionPoint from './PudoCollectionPoint';
 
 import './pudo.scss';
 
@@ -27,12 +28,14 @@ class Pudo extends React.Component {
   render() {
     const {savedAddresses} = this.props.pudo;
     const {isAddCollectionPoint} = this.props.pudo;
+    const {isCollectionPointInfo} = this.props.pudo;
 
     return (
       <div className="pudo">
         <PudoSavedAddresses addresses={savedAddresses}/>
         <button className="PudoAddCollectionPoint" onClick={this.activateAddCollectionPoint}>+Add a collection point</button>
         {isAddCollectionPoint && <PudoNewCollectionPoint />}
+        {isCollectionPointInfo && <PudoCollectionPoint />}
       </div>
     )
   }

@@ -24,6 +24,20 @@ export function deactivateAddCollectionPoint() {
   return {type: types.DEACTIVATE_ADD_COLLECTION_POINT, isAddCollectionPoint};
 }
 
+export function activateCollectionPointInfo() {
+  const isCollectionPointInfo = true;
+  return {type: types.ACTIVATE_COLLECTION_POINT_INFO, isCollectionPointInfo};
+}
+
+export function deactivateCollectionPointInfo() {
+  const isCollectionPointInfo = false;
+  return {type: types.DEACTIVATE_COLLECTION_POINT_INFO, isCollectionPointInfo};
+}
+
+export function selectCollectionPointSuccess(selectedCollectionPoint) {
+  return {type: types.SELECT_COLLECTION_POINT_SUCCESS, selectedCollectionPoint};
+}
+
 export function loadPudoSavedAddresses() {
   return dispatch => {
     dispatch(beginAjaxCall());
@@ -59,5 +73,12 @@ export function getPudoLocationPoints() {
     }).catch(error => {
       console.log(error);
     });
+  }
+}
+
+export function selectCollectionPoint(selectedCollectionPoint) {
+  return dispatch => {
+    dispatch(selectCollectionPointSuccess(selectedCollectionPoint));
+    dispatch(activateCollectionPointInfo());
   }
 }

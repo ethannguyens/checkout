@@ -23,6 +23,18 @@ export default function pudoReducer(state = initialState.pudo, action) {
       return Object.assign({}, state, {isAddCollectionPoint: action.isAddCollectionPoint});
       break;
 
+    case types.ACTIVATE_COLLECTION_POINT_INFO:
+      return Object.assign({}, state, {isCollectionPointInfo: action.isCollectionPointInfo});
+      break;
+
+    case types.DEACTIVATE_COLLECTION_POINT_INFO:
+      return Object.assign({}, state, {isCollectionPointInfo: action.isCollectionPointInfo});
+      break;
+
+    case types.SELECT_COLLECTION_POINT_SUCCESS:
+      return Object.assign({}, state, {selectedCollectionPoint: action.selectedCollectionPoint});
+      break;
+
     default:
       return state;
   }

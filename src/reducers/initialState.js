@@ -2,11 +2,13 @@ export default {
   pudo: {
     savedAddresses: [],
     currentLocation: {
-      latlng: {lat: 51.51, lng: 0.13},
+      latlng: {lat: 45.848923, lng: 1.4288653},
       address: '',
       postcode: ''
     },
     isAddCollectionPoint: false,
+    isCollectionPointInfo: false,
+    selectedCollectionPoint: {},
     collectionPoints: []
   },
   ajaxCallsInProgress: 0
