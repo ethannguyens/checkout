@@ -10,11 +10,10 @@ class PudoNewCollectionPointPostcode extends React.Component {
     super(props, context);
 
     this.deactivate = this.deactivate.bind(this);
-    this.props.actions.getPudoCurrentLocation();
+    this.props.actions.getCurrentLocationCollectionPoints();
   }
 
   deactivate() {
-    console.log('deactivate');
     this.props.actions.deactivateAddCollectionPoint();
   }
 

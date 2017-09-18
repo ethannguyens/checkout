@@ -15,11 +15,9 @@ function getAddress(latlng) {
       geocoder.geocode({'location': latlng}, function(results, status) {
         if (status === 'OK') {
           if (results[0]) {
-            console.log(results[0]);
             const address = results[0].address_components;
             const postcode = address[address.length - 1].long_name;
-            console.log(postcode);
-            resolve(results[0].formatted_address, postcode);
+            resolve([results[0].formatted_address, postcode]);
 
           } else {
             reject(false)
@@ -46,10 +44,9 @@ class PudoApi {
           let currentLocation = {};
           currentLocation['latlng'] = {lat: position.coords.latitude, lng: position.coords.longitude};
 
-          getAddress(currentLocation.latlng).then((address, postcode) => {
-            currentLocation['address'] = address;
-            currentLocation['postcode'] = postcode;
-            console.log(currentLocation);
+          getAddress(currentLocation.latlng).then((address) => {
+            currentLocation['address'] = address[0];
+            currentLocation['postcode'] = address[1];
             resolve(currentLocation);
           })
             .catch(err => reject(err));

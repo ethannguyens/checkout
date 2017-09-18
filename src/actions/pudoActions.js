@@ -35,6 +35,13 @@ export function loadPudoSavedAddresses() {
   };
 }
 
+export function getCurrentLocationCollectionPoints() {
+  return dispatch => {
+    dispatch(getPudoCurrentLocation());
+    dispatch(getPudoLocationPoints());
+  }
+}
+
 export function getPudoCurrentLocation() {
   return dispatch => {
     return PudoApi.getCurrentLocation().then(currentLocation => {

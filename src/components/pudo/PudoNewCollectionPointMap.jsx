@@ -15,17 +15,19 @@ class PudoNewCollectionPointMap extends React.Component {
 
   render() {
     const {latlng} = this.props.pudo.currentLocation;
+    const {collectionPoints} = this.props.pudo;
     return (
       <div style={{width: '100%', height: '400px'}}>
         <GoogleMapReact
-          defaultCenter={latlng}
+          center={latlng}
           defaultZoom={13}
         >
-          <PudoNewCollectionPointMarker
-            lat={59.955413}
-            lng={30.337844}
-            text={'Kreyser Avrora'}
-          />
+          {collectionPoints.map((collection, key) => <PudoNewCollectionPointMarker
+            key={key}
+            lat={collection.latitude}
+            lng={collection.longitude}
+            text={collection.id}
+          />)}
         </GoogleMapReact>
       </div>
     )
