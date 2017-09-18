@@ -12,13 +12,6 @@ import './pudo.scss';
 class Pudo extends React.Component {
   constructor(props, context) {
     super(props, context);
-
-    this.activateAddCollectionPoint = this.activateAddCollectionPoint.bind(this);
-  }
-
-  activateAddCollectionPoint() {
-    console.log('addNewCollection');
-    this.props.actions.activateAddCollectionPoint();
   }
 
   render() {
@@ -28,10 +21,12 @@ class Pudo extends React.Component {
     return (
       <div className="pudo">
         <PudoSavedAddresses addresses={pudo.savedAddresses}/>
-        <button className="PudoAddCollectionPoint" onClick={actions.activateAddCollectionPoint}>+Add a collection point</button>
-        {pudo.isAddCollectionPoint && <PudoNewCollectionPoint />}
+        <button className="PudoAddCollectionPoint" onClick={actions.activateAddCollectionPoint}>+Add a collection
+          point
+        </button>
+        {pudo.isAddCollectionPoint && <PudoNewCollectionPoint/>}
         {pudo.isCollectionPointInfo && <PudoCollectionPoint selectedCollectionPoint={pudo.selectedCollectionPoint}
-                                                       deactivateCollectionPointInfo={actions.deactivateCollectionPointInfo}/>}
+                                                            deactivateCollectionPointInfo={actions.deactivateCollectionPointInfo}/>}
       </div>
     )
   }

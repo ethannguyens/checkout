@@ -20,7 +20,7 @@ function getAddress(latlng) {
             resolve([results[0].formatted_address, postcode]);
 
           } else {
-            reject(false)
+            reject(false);
           }
         } else {
           reject(false);
@@ -58,7 +58,7 @@ class PudoApi {
   static getCollectionPoints(postcode) {
     return new Promise((resolve, reject) => {
       resolve(mockCollectionPoints);
-    })
+    });
   }
 }
 

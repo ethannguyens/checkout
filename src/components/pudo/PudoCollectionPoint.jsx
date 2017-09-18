@@ -13,12 +13,14 @@ const PudoCollectionPoint = (({selectedCollectionPoint, deactivateCollectionPoin
         <div className="pudoCollectionPointMenu">
           <button onClick={deactivateCollectionPointInfo} className="pudoCollectionPointMenu-back">Back</button>
         </div>
+
         <div className="pudoCollectionPointInfo">
           <img src="" alt="" className="pudoCollectionPointInfo-img"/>
           <p className="pudoCollectionPointInfo-header">{selectedCollectionPoint.id}</p>
           <p className="pudoCollectionPointInfo-distance">{selectedCollectionPoint.distanceInKm}</p>
           <p className="pudoCollectionPointInfo-address"></p>
         </div>
+
         <div className="pudoCollectionPointMap" style={{width: '100%', height: '400px'}}>
           <GoogleMapReact className="pudoCollectionPointMap"
                           center={{lat: selectedCollectionPoint.latitude, lng: selectedCollectionPoint.longitude}}
@@ -33,15 +35,18 @@ const PudoCollectionPoint = (({selectedCollectionPoint, deactivateCollectionPoin
         </div>
 
         <div className="pudoCollectionPointHours">
-
         </div>
+
         <div className="pudoCollectionPointServices">
         </div>
+
         <button className="pudoCollectionPointSelect">Select</button>
       </div>
     ));
 
 PudoCollectionPoint.propTypes = {
+  selectedCollectionPoint: PropTypes.object.isRequired,
+  deactivateCollectionPointInfo: PropTypes.func.isRequired
 };
 
 export default PudoCollectionPoint;

@@ -53,32 +53,32 @@ export function getCurrentLocationCollectionPoints() {
   return dispatch => {
     dispatch(getPudoCurrentLocation());
     dispatch(getPudoLocationPoints());
-  }
+  };
 }
 
 export function getPudoCurrentLocation() {
   return dispatch => {
     return PudoApi.getCurrentLocation().then(currentLocation => {
-      dispatch(getPudoCurrentLocationSuccess(currentLocation))
+      dispatch(getPudoCurrentLocationSuccess(currentLocation));
     }).catch(error => {
       console.log(error);
     });
-  }
+  };
 }
 
 export function getPudoLocationPoints() {
   return dispatch => {
     return PudoApi.getCollectionPoints().then(collectionPoinnts => {
-      dispatch(getPudoCollectionPointsSuccess(collectionPoinnts))
+      dispatch(getPudoCollectionPointsSuccess(collectionPoinnts));
     }).catch(error => {
       console.log(error);
     });
-  }
+  };
 }
 
 export function selectCollectionPoint(selectedCollectionPoint) {
   return dispatch => {
     dispatch(selectCollectionPointSuccess(selectedCollectionPoint));
     dispatch(activateCollectionPointInfo());
-  }
+  };
 }
