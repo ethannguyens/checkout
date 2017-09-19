@@ -15,4 +15,24 @@
     display: block;
     text-transform: capitalize;
   }
+
+  .PudoNewCollectionPointMarker {
+    width: 120px;
+    height: 80px;
+    background: red;
+    position: relative;
+    -moz-border-radius:    10px;
+    -webkit-border-radius: 10px;
+    border-radius:         10px;
+  }
+  .PudoNewCollectionPointMarker:before {
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid red;
+  }
 }
+

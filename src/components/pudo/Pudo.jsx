@@ -5,7 +5,7 @@ import {bindActionCreators} from 'redux';
 import * as pudoActions from '../../actions/pudoActions';
 import PudoSavedAddresses from './PudoSavedAddresses';
 import PudoNewCollectionPoint from './PudoNewCollectionPoint';
-import PudoCollectionPoint from './PudoCollectionPoint';
+import PudoNewCollectionPointInfo from './PudoNewCollectionPointInfo';
 
 import './pudo.scss';
 
@@ -25,7 +25,7 @@ class Pudo extends React.Component {
           point
         </button>
         {pudo.isAddCollectionPoint && <PudoNewCollectionPoint/>}
-        {pudo.isCollectionPointInfo && <PudoCollectionPoint selectedCollectionPoint={pudo.selectedCollectionPoint}
+        {pudo.isCollectionPointInfo && <PudoNewCollectionPointInfo selectedCollectionPoint={pudo.selectedCollectionPoint}
                                                             deactivateCollectionPointInfo={actions.deactivateCollectionPointInfo}/>}
       </div>
     )

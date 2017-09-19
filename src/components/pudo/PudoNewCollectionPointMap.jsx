@@ -26,6 +26,7 @@ class PudoNewCollectionPointMap extends React.Component {
             key={key}
             lat={collection.latitude}
             lng={collection.longitude}
+            no={key}
             data={collection}
           />)}
         </GoogleMapReact>

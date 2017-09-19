@@ -5,10 +5,9 @@ import {bindActionCreators} from 'redux';
 import * as pudoActions from '../../actions/pudoActions';
 import GoogleMapReact from 'google-map-react';
 import PudoNewCollectionPointMarker from './PudoNewCollectionPointMarker';
+import pudoUtils from '../../modules/pudo-utils';
 
-
-
-const PudoCollectionPoint = (({selectedCollectionPoint, deactivateCollectionPointInfo}) => (
+const PudoNewCollectionPointInfo = (({selectedCollectionPoint, deactivateCollectionPointInfo}) => (
       <div className="pudoCollectionPoint">
         <div className="pudoCollectionPointMenu">
           <button onClick={deactivateCollectionPointInfo} className="pudoCollectionPointMenu-back">Back</button>
@@ -18,7 +17,7 @@ const PudoCollectionPoint = (({selectedCollectionPoint, deactivateCollectionPoin
           <img src="" alt="" className="pudoCollectionPointInfo-img"/>
           <p className="pudoCollectionPointInfo-header">{selectedCollectionPoint.id}</p>
           <p className="pudoCollectionPointInfo-distance">{selectedCollectionPoint.distanceInKm}</p>
-          <p className="pudoCollectionPointInfo-address"></p>
+          <p className="pudoCollectionPointInfo-address">{pudoUtils.addressText(selectedCollectionPoint.address)}</p>
         </div>
 
         <div className="pudoCollectionPointMap" style={{width: '100%', height: '400px'}}>
@@ -44,12 +43,12 @@ const PudoCollectionPoint = (({selectedCollectionPoint, deactivateCollectionPoin
       </div>
     ));
 
-PudoCollectionPoint.propTypes = {
+PudoNewCollectionPointInfo.propTypes = {
   selectedCollectionPoint: PropTypes.object.isRequired,
   deactivateCollectionPointInfo: PropTypes.func.isRequired
 };
 
-export default PudoCollectionPoint;
+export default PudoNewCollectionPointInfo;
 
 
 
