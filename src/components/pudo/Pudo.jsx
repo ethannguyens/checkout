@@ -12,6 +12,25 @@ import './pudo.scss';
 class Pudo extends React.Component {
   constructor(props, context) {
     super(props, context);
+
+    this.activateAddCollectionPoint = this.activateAddCollectionPoint.bind(this);
+    this.deactivateAddCollectionPoint = this.deactivateAddCollectionPoint.bind(this);
+    this.deactivateCollectionPointInfo = this.deactivateCollectionPointInfo.bind(this);
+  }
+
+  activateAddCollectionPoint() {
+    this.props.actions.activateAddCollectionPoint();
+    document.body.classList.add('pudo-active');
+  }
+
+  deactivateAddCollectionPoint() {
+    this.props.actions.deactivateAddCollectionPoint();
+    document.body.classList.remove('pudo-active');
+  }
+
+  deactivateCollectionPointInfo() {
+    this.props.actions.deactivateCollectionPointInfo();
+    document.body.classList.remove('pudo-active');
   }
 
   render() {
@@ -21,12 +40,12 @@ class Pudo extends React.Component {
     return (
       <div className="pudo">
         <PudoSavedAddresses addresses={pudo.savedAddresses}/>
-        <button className="PudoAddCollectionPoint" onClick={actions.activateAddCollectionPoint}>+Add a collection
+        <button className="PudoAddCollectionPoint" onClick={this.activateAddCollectionPoint}>+Add a collection
           point
         </button>
-        {pudo.isAddCollectionPoint && <PudoNewCollectionPoint/>}
+        {pudo.isAddCollectionPoint && <PudoNewCollectionPoint deactivateAddCollectionPoint={this.deactivateAddCollectionPoint}/>}
         {pudo.isCollectionPointInfo && <PudoNewCollectionPointInfo selectedCollectionPoint={pudo.selectedCollectionPoint}
-                                                            deactivateCollectionPointInfo={actions.deactivateCollectionPointInfo}/>}
+                                                            deactivateCollectionPointInfo={this.deactivateCollectionPointInfo}/>}
       </div>
     )
   }

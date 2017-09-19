@@ -9,18 +9,18 @@ import pudoUtils from '../../modules/pudo-utils';
 
 const PudoNewCollectionPointInfo = (({selectedCollectionPoint, deactivateCollectionPointInfo}) => (
       <div className="pudoCollectionPoint">
-        <div className="pudoCollectionPointMenu">
-          <button onClick={deactivateCollectionPointInfo} className="pudoCollectionPointMenu-back">Back</button>
+        <div className="pudoCollectionPoint__menu">
+          <button onClick={deactivateCollectionPointInfo} className="pudoCollectionPoint__menu-back">Back</button>
         </div>
 
-        <div className="pudoCollectionPointInfo">
-          <img src="" alt="" className="pudoCollectionPointInfo-img"/>
-          <p className="pudoCollectionPointInfo-header">{selectedCollectionPoint.id}</p>
-          <p className="pudoCollectionPointInfo-distance">{selectedCollectionPoint.distanceInKm}</p>
-          <p className="pudoCollectionPointInfo-address">{pudoUtils.addressText(selectedCollectionPoint.address)}</p>
+        <div className="pudoCollectionPoint__info">
+          <img src="" alt="" className="pudoCollectionPoint__info-img"/>
+          <p className="pudoCollectionPoint__info-header">{selectedCollectionPoint.id}</p>
+          <p className="pudoCollectionPoint__info-distance">{selectedCollectionPoint.distanceInKm}</p>
+          <p className="pudoCollectionPoint__info-address">{pudoUtils.addressText(selectedCollectionPoint.address)}</p>
         </div>
 
-        <div className="pudoCollectionPointMap" style={{width: '100%', height: '400px'}}>
+        <div className="pudoCollectionPoint__map" style={{width: '100%', height: '400px'}}>
           <GoogleMapReact className="pudoCollectionPointMap"
                           center={{lat: selectedCollectionPoint.latitude, lng: selectedCollectionPoint.longitude}}
                           defaultZoom={14}
@@ -33,13 +33,13 @@ const PudoNewCollectionPointInfo = (({selectedCollectionPoint, deactivateCollect
           </GoogleMapReact>
         </div>
 
-        <div className="pudoCollectionPointHours">
+        <div className="pudoCollectionPoint__hours">
         </div>
 
-        <div className="pudoCollectionPointServices">
+        <div className="pudoCollectionPoint__services">
         </div>
 
-        <button className="pudoCollectionPointSelect">Select</button>
+        <button className="pudoCollectionPoint__select">Select</button>
       </div>
     ));
 

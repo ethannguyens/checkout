@@ -9,23 +9,13 @@ class PudoNewCollectionPointPostcode extends React.Component {
   constructor(props, context) {
     super(props, context);
 
-    this.deactivate = this.deactivate.bind(this);
     this.props.actions.getCurrentLocationCollectionPoints();
   }
-
-  deactivate() {
-    this.props.actions.deactivateAddCollectionPoint();
-  }
-
   render() {
     const {postcode} = this.props.pudo.currentLocation;
 
     return (
       <div className="pudoAddCollectionPointPostcode">
-        <div className="pudoAddCollectionPointPostcode-header">
-          <div className="pudoAddCollectionPointPostcode-headerText">Add a Collection Point</div>
-          <span className="pudoAddCollectionPointPostcode-close" onClick={this.deactivate}></span>
-        </div>
         <div className="pudoAddCollectionPointPostcode-body">
           <div className="pudoAddCollectionPointPostcode-infoTop">Find your nearby collection points</div>
           <input type="text" value={postcode ? postcode : ""} className="pudoAddCollectionPointPostcode-input"/>

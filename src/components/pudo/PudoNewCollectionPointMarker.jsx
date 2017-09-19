@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const PudoNewCollectionPointMarker = ({no}) => (
   <div className="PudoNewCollectionPointMarker">
-    {no}
+    <div className="PudoNewCollectionPointMarker__text">{no}</div>
   </div>
 );
 

@@ -6,6 +6,8 @@ import * as pudoActions from '../../actions/pudoActions';
 import GoogleMapReact from 'google-map-react';
 import PudoNewCollectionPointMarker from './PudoNewCollectionPointMarker';
 
+import './PudoNewCollectionPointMap.scss'
+
 class PudoNewCollectionPointMap extends React.Component {
   constructor(props, context) {
     super(props, context);
@@ -16,10 +18,10 @@ class PudoNewCollectionPointMap extends React.Component {
     const actions = this.props.actions;
 
     return (
-      <div style={{width: '100%', height: '400px'}}>
+      <div className="PudoNewCollectionPointMap">
         <GoogleMapReact
           center={{lat: 45.848923, lng: 1.4288653}}
-          defaultZoom={13}
+          defaultZoom={11}
           onChildClick={(key, childProps) => actions.selectCollectionPoint(childProps.data)}
         >
           {pudo.collectionPoints.map((collection, key) => <PudoNewCollectionPointMarker
