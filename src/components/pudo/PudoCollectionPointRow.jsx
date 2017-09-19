@@ -5,7 +5,7 @@ import PudoNewCollectionPointMarker from './PudoNewCollectionPointMarker';
 
 const PudoCollectionPointRow = ({no, point}) => {
   return (
-    <div className="pudoCollectionPointRow">
+    <div id={`pudoCollectionPointRow-${no-1}`} className="pudoCollectionPointRow">
       <PudoNewCollectionPointMarker no={no}/>
       <div className="pudoCollectionPointRow__info">
         <div className="pudoCollectionPointRow__info-name">{point.name}</div>

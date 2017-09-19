@@ -207,6 +207,108 @@ const mockCollectionPoints = [
       }
     ],
     "distanceInKm": 15868
+  },
+  {
+    "id": "77151",
+    "latitude": 45.862606,
+    "longitude": 1.31,
+    "name": "Tal",
+    "address": {
+      "addressId": "",
+      "buildingNameNumber": "22",
+      "organisationName": "",
+      "line1": "RUE JEAN JAURES",
+      "line2": "LE PALAIS DES TABACS",
+      "line3": "LE PALAIS SUR VIENNE",
+      "line4": "",
+      "postcode": "87410",
+      "countryCode": null
+    },
+    "workingDays": [
+      {
+        "day": "MONDAY",
+        "workingHours": [
+          {
+            "startTime": "06:15",
+            "endTime": "14:00"
+          },
+          {
+            "startTime": "15:30",
+            "endTime": "19:15"
+          }
+        ]
+      },
+      {
+        "day": "TUESDAY",
+        "workingHours": [
+          {
+            "startTime": "06:15",
+            "endTime": "14:00"
+          },
+          {
+            "startTime": "15:30",
+            "endTime": "19:15"
+          }
+        ]
+      },
+      {
+        "day": "WEDNESDAY",
+        "workingHours": [
+          {
+            "startTime": "06:15",
+            "endTime": "14:00"
+          },
+          {
+            "startTime": "15:30",
+            "endTime": "19:15"
+          }
+        ]
+      },
+      {
+        "day": "THURSDAY",
+        "workingHours": [
+          {
+            "startTime": "06:15",
+            "endTime": "14:00"
+          },
+          {
+            "startTime": "15:30",
+            "endTime": "19:15"
+          }
+        ]
+      },
+      {
+        "day": "FRIDAY",
+        "workingHours": [
+          {
+            "startTime": "06:15",
+            "endTime": "14:00"
+          },
+          {
+            "startTime": "15:30",
+            "endTime": "19:15"
+          }
+        ]
+      },
+      {
+        "day": "SATURDAY",
+        "workingHours": [
+          {
+            "startTime": "07:00",
+            "endTime": "13:00"
+          },
+          {
+            "startTime": "16:00",
+            "endTime": "19:00"
+          }
+        ]
+      },
+      {
+        "day": "SUNDAY",
+        "workingHours": []
+      }
+    ],
+    "distanceInKm": 15868
   }
 ];
 
