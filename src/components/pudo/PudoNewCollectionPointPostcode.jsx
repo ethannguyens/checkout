@@ -23,12 +23,14 @@ class PudoNewCollectionPointPostcode extends React.Component {
     return (
       <div className="pudoAddCollectionPointPostcode">
         <div className="pudoAddCollectionPointPostcode-header">
-          <p className="pudoAddCollectionPointPostcode-headerText">Add a Collection Point</p>
-          <div className="pudoAddCollectionPointPostcode-close" onClick={this.deactivate}>X</div>
+          <div className="pudoAddCollectionPointPostcode-headerText">Add a Collection Point</div>
+          <span className="pudoAddCollectionPointPostcode-close" onClick={this.deactivate}></span>
         </div>
-        <p className="pudoAddCollectionPointPostcode-infoTop">Find your nearby collection points</p>
-        <input type="text" value={postcode ? postcode : ""} className="pudoAddCollectionPointPostcode-input"/>
-        <p className="pudoAddCollectionPointPostcode-infoBottom">Enter post code to find nearby collection points</p>
+        <div className="pudoAddCollectionPointPostcode-body">
+          <div className="pudoAddCollectionPointPostcode-infoTop">Find your nearby collection points</div>
+          <input type="text" value={postcode ? postcode : ""} className="pudoAddCollectionPointPostcode-input"/>
+          <div className="pudoAddCollectionPointPostcode-infoBottom">Enter post code to find nearby collection points</div>
+        </div>
       </div>
     )
   }
