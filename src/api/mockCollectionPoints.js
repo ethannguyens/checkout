@@ -3,6 +3,7 @@ const mockCollectionPoints = [
     "id": "699",
     "latitude": 45.848923,
     "longitude": 1.4288653,
+    "name": "Stock",
     "address": {
       "addressId": "",
       "buildingNameNumber": "77",
@@ -109,6 +110,7 @@ const mockCollectionPoints = [
     "id": "77151",
     "latitude": 45.862606,
     "longitude": 1.3228327,
+    "name": "Kale",
     "address": {
       "addressId": "",
       "buildingNameNumber": "22",

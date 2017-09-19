@@ -1,6 +1,7 @@
 @import '../../styles/modules/variables';
 
-.pudoAddCollectionPoint {
+//Pudo Collection Point
+.pudoNewCollectionPoint {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -10,19 +11,20 @@
   z-index: 9;
 }
 
-.pudoAddCollectionPoint__header {
+.pudoNewCollectionPoint__header {
   height: 50px;
   text-align: center;
   background-color: #eaeaea;
 }
-.pudoAddCollectionPoint__header-text {
+
+.pudoNewCollectionPoint__header-text {
   font-size: 16px;
   line-height: 50px;
   color: #555555;
 }
 
-//Close cross css
-.pudoAddCollectionPoint__close {
+//close button
+.pudoNewCollectionPoint__close {
   position: absolute;
   right: 20px;
   top: 12px;
@@ -30,10 +32,12 @@
   height: 20px;
   opacity: 0.8;
 }
-.pudoAddCollectionPoint__close:hover {
+
+.pudoNewCollectionPoint__close:hover {
   opacity: 1;
 }
-.pudoAddCollectionPoint__close:before, .pudoAddCollectionPoint__close:after {
+
+.pudoNewCollectionPoint__close:before, .pudoNewCollectionPoint__close:after {
   position: absolute;
   left: 15px;
   content: ' ';
@@ -41,22 +45,21 @@
   width: 2px;
   background-color: #333;
 }
-.pudoAddCollectionPoint__close:before {
+
+.pudoNewCollectionPoint__close:before {
   transform: rotate(45deg);
 }
-.pudoAddCollectionPoint__close:after {
+
+.pudoNewCollectionPoint__close:after {
   transform: rotate(-45deg);
 }
 
-.pudoNewCollectionPoint__body-info {
+.pudoNewCollectionPoint__body-info-interact {
   padding: 20px 20px 10px 20px;
 }
 
-
-
-
-
-.pudoAddCollectionPoint__body-info-highlight {
+//Pudo body
+.pudoNewCollectionPoint__body-info-highlight {
   font-size: 14px;
   font-weight: 600;
   line-height: 1.43;
@@ -65,7 +68,7 @@
   color: #333333;
 }
 
-.pudoAddCollectionPoint__body-info-input {
+.pudoNewCollectionPoint__body-info-input {
   border-radius: 2px;
   height: 44px;
   width: 94%;
@@ -80,7 +83,7 @@
   padding: 0 12px;
 }
 
-.pudoAddCollectionPoint__body-info-footer {
+.pudoNewCollectionPoint__body-info-footer {
   font-size: 14px;
   line-height: 1.43;
   text-align: center;
@@ -89,28 +92,31 @@
   margin-top: 7px;
 }
 
-.pudoAddCollectionPoint__body-info-footer-count {
+.pudoNewCollectionPoint__body-info-footer-count {
   color: #d00045;
   font-weight: 800;
 }
 
 @media (min-width: $media-md) {
-  .pudoAddCollectionPoint {
+  .pudoNewCollectionPoint {
     position: absolute;
     top: 15%;
     bottom: 15%;
     left: 15%;
     right: 15%;
   }
-}
 
-@media (min-width: $media-lg) {
-  .pudoAddCollectionPoint {
-    left: 25%;
-    right: 25%;
+  .pudoNewCollectionPoint__body-info-interact {
+    width: 220px;
   }
 }
 
+@media (min-width: $media-lg) {
+  .pudoNewCollectionPoint {
+    left: 20%;
+    right: 20%;
+  }
+}
 
 //MAPPPPPP
 .pudoNewCollectionPoint__body-map {
@@ -127,8 +133,6 @@
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 5px;
-  bottom: 32px;
-  right: 9px;
   box-shadow: 0px 1px 1px #555;
 }
 
@@ -153,8 +157,63 @@
 
 @media (min-width: $media-md) {
   .pudoNewCollectionPoint__body-map {
-    height: 75%;
-    width: 100%;
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    bottom: 0;
+    left: 275px;
+
+  }
+}
+
+//Pudo Collection points list
+.pudoCollectionPointsList {
+  display: none;
+  width: 275px;
+}
+
+@media (min-width: $media-md) {
+  .pudoCollectionPointsList {
+    display: block;
+  }
+}
+
+//Pudo Collection Row
+.pudoCollectionPointRow {
+  border-top: 1px solid #eeeeee;
+  padding: 10px 20px;
+  font-size: 14px;
+
+  &:last-child {
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .pudoNewCollectionPointMarker {
+    display: inline-block;
     position: absolute;
   }
 }
+
+
+.pudoCollectionPointRow__info {
+  display: inline-block;
+  width: 150px;
+  margin-left: 40px;
+}
+
+.pudoCollectionPointRow__distance{
+  display: inline-block;
+}
+
+.pudoCollectionPointRow__info-name {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.pudoCollectionPointRow__distance {
+  text-align: right;
+  position: absolute;
+}
+

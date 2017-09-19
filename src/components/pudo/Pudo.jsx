@@ -19,12 +19,12 @@ class Pudo extends React.Component {
 
   activateAddCollectionPoint() {
     this.props.actions.activateAddCollectionPoint();
-    document.body.classList.add('pudo-active');
+    document.body.setAttribute('pudo', 'active');
   }
 
   deactivateCollectionPointInfo() {
     this.props.actions.deactivateCollectionPointInfo();
-    document.body.classList.remove('pudo-active');
+    document.body.setAttribute('pudo', 'active');
   }
 
   render() {

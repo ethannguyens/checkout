@@ -5,6 +5,7 @@ import {bindActionCreators} from 'redux';
 import * as pudoActions from '../../actions/pudoActions';
 import GoogleMapReact from 'google-map-react';
 import PudoNewCollectionPointMarker from './PudoNewCollectionPointMarker';
+import PudoCollectionPointsList from './PudoCollectionPointsList';
 
 import './PudoNewCollectionPoint.scss';
 
@@ -20,19 +21,19 @@ class PudoNewCollectionPoint extends React.Component {
 
   deactivateAddCollectionPoint() {
     this.props.actions.deactivateAddCollectionPoint();
-    document.body.classList.remove('pudo-active');
+    document.body.removeAttribute('pudo');
   }
 
   footer() {
     if (this.props.pudo.collectionPoints.length > 0) return (
-      <div className="pudoAddCollectionPoint__body-info-footer">
-        <span className="pudoAddCollectionPoint__body-info-footer-count">{this.props.pudo.collectionPoints.length} </span>
+      <div className="pudoNewCollectionPoint__body-info-footer">
+        <span className="pudoNewCollectionPoint__body-info-footer-count">{this.props.pudo.collectionPoints.length} </span>
         collection points found
       </div>
     );
 
     return (
-      <div className="pudoAddCollectionPoint__body-info-footer">
+      <div className="pudoNewCollectionPoint__body-info-footer">
         Enter postcode to find nearby collection points
       </div>
     )
@@ -41,18 +42,21 @@ class PudoNewCollectionPoint extends React.Component {
 
   render() {
     return (
-      <div className="pudoAddCollectionPoint">
-        <div className="pudoAddCollectionPoint__header">
-          <div className="pudoAddCollectionPoint__header-text">Add a Collection Point</div>
-          <span className="pudoAddCollectionPoint__close" onClick={this.deactivateAddCollectionPoint}/>
+      <div className="pudoNewCollectionPoint">
+        <div className="pudoNewCollectionPoint__header">
+          <div className="pudoNewCollectionPoint__header-text">Add a Collection Point</div>
+          <span className="pudoNewCollectionPoint__close" onClick={this.deactivateAddCollectionPoint}/>
         </div>
-        <div className="pudoAddCollectionPoint__body">
+        <div className="pudoNewCollectionPoint__body">
           <div className="pudoNewCollectionPoint__body-info">
-            <div className="pudoAddCollectionPoint__body-info-highlight">Find your nearby collection points</div>
-            <input type="text"
-                   value={this.props.pudo.currentLocation.postcode ? this.props.pudo.currentLocation.postcode : ""}
-                   className="pudoAddCollectionPoint__body-info-input"/>
-            {this.footer()}
+            <div className="pudoNewCollectionPoint__body-info-interact">
+              <div className="pudoNewCollectionPoint__body-info-highlight">Find your nearby collection points</div>
+              <input type="text"
+                     value={this.props.pudo.currentLocation.postcode ? this.props.pudo.currentLocation.postcode : ""}
+                     className="pudoNewCollectionPoint__body-info-input"/>
+              {this.footer()}
+            </div>
+            <PudoCollectionPointsList list={this.props.pudo.collectionPoints}/>
           </div>
           <div className="pudoNewCollectionPoint__body-map">
             <GoogleMapReact
@@ -64,7 +68,7 @@ class PudoNewCollectionPoint extends React.Component {
                 key={key}
                 lat={collection.latitude}
                 lng={collection.longitude}
-                no={key}
+                no={++key}
                 data={collection}
               />)}
             </GoogleMapReact>

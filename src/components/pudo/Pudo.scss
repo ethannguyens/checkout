@@ -20,7 +20,7 @@
 }
 
 @media (min-width: $media-md) {
-  body.pudo-active {
+  body[pudo="active"]  {
     background-color: #555;
   }
 }
