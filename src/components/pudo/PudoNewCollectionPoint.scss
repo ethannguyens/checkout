@@ -48,7 +48,7 @@
   transform: rotate(-45deg);
 }
 
-.pudoAddCollectionPointPostcode-body {
+.pudoNewCollectionPoint__body-info {
   padding: 20px 20px 10px 20px;
 }
 
@@ -56,7 +56,7 @@
 
 
 
-.pudoAddCollectionPointPostcode-infoTop {
+.pudoAddCollectionPoint__body-info-highlight {
   font-size: 14px;
   font-weight: 600;
   line-height: 1.43;
@@ -65,7 +65,7 @@
   color: #333333;
 }
 
-.pudoAddCollectionPointPostcode-input {
+.pudoAddCollectionPoint__body-info-input {
   border-radius: 2px;
   height: 44px;
   width: 94%;
@@ -80,7 +80,7 @@
   padding: 0 12px;
 }
 
-.pudoAddCollectionPointPostcode-infoBottom {
+.pudoAddCollectionPoint__body-info-footer {
   font-size: 14px;
   line-height: 1.43;
   text-align: center;
@@ -89,6 +89,10 @@
   margin-top: 7px;
 }
 
+.pudoAddCollectionPoint__body-info-footer-count {
+  color: #d00045;
+  font-weight: 800;
+}
 
 @media (min-width: $media-md) {
   .pudoAddCollectionPoint {
@@ -104,5 +108,53 @@
   .pudoAddCollectionPoint {
     left: 25%;
     right: 25%;
+  }
+}
+
+
+//MAPPPPPP
+.pudoNewCollectionPoint__body-map {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.pudoNewCollectionPointMarker {
+  width: 32px;
+  height: 32px;
+  background: #d00045;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 5px;
+  bottom: 32px;
+  right: 9px;
+  box-shadow: 0px 1px 1px #555;
+}
+
+.pudoNewCollectionPointMarker:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #d00045;
+  bottom: -5px;
+  left: 10px;
+}
+
+.pudoNewCollectionPointMarker__text {
+  line-height: 32px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+
+@media (min-width: $media-md) {
+  .pudoNewCollectionPoint__body-map {
+    height: 75%;
+    width: 100%;
+    position: absolute;
   }
 }

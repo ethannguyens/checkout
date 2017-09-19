@@ -14,18 +14,12 @@ class Pudo extends React.Component {
     super(props, context);
 
     this.activateAddCollectionPoint = this.activateAddCollectionPoint.bind(this);
-    this.deactivateAddCollectionPoint = this.deactivateAddCollectionPoint.bind(this);
     this.deactivateCollectionPointInfo = this.deactivateCollectionPointInfo.bind(this);
   }
 
   activateAddCollectionPoint() {
     this.props.actions.activateAddCollectionPoint();
     document.body.classList.add('pudo-active');
-  }
-
-  deactivateAddCollectionPoint() {
-    this.props.actions.deactivateAddCollectionPoint();
-    document.body.classList.remove('pudo-active');
   }
 
   deactivateCollectionPointInfo() {
@@ -43,7 +37,7 @@ class Pudo extends React.Component {
         <button className="PudoAddCollectionPoint" onClick={this.activateAddCollectionPoint}>+Add a collection
           point
         </button>
-        {pudo.isAddCollectionPoint && <PudoNewCollectionPoint deactivateAddCollectionPoint={this.deactivateAddCollectionPoint}/>}
+        {pudo.isAddCollectionPoint && <PudoNewCollectionPoint />}
         {pudo.isCollectionPointInfo && <PudoNewCollectionPointInfo selectedCollectionPoint={pudo.selectedCollectionPoint}
                                                             deactivateCollectionPointInfo={this.deactivateCollectionPointInfo}/>}
       </div>
