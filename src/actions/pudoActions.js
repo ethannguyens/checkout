@@ -4,7 +4,9 @@ import {beginAjaxCall} from './ajaxStatusActions';
 import {ENTER_COLLECTION_POINT} from "./actionTypes";
 import {LEAVE_COLLECTION_POINT} from "./actionTypes";
 
-export function loadPudoSavedAddressesSuccess(savedAddresses) {
+const mapZoomDisplay = 14;
+
+  export function loadPudoSavedAddressesSuccess(savedAddresses) {
   return {type: types.LOAD_PUDO_SAVED_ADDRESSES_SUCCESS, savedAddresses};
 }
 
@@ -16,34 +18,18 @@ export function getPudoCollectionPointsSuccess(collectionPoints) {
   return {type: types.GET_PUDO_COLLECTION_POINTS_SUCCESS, collectionPoints};
 }
 
+//Open Add new collection point menu
 export function activateAddCollectionPoint() {
   const isAddCollectionPoint = true;
-  return {type: types.ACTIVATE_ADD_COLLECTION_POINT, isAddCollectionPoint};
+  return {type: types.ACTIVATE_ADD_COLLECTION_POINT_SUCESS, isAddCollectionPoint};
 }
 
 export function deactivateAddCollectionPoint() {
   const isAddCollectionPoint = false;
-  return {type: types.DEACTIVATE_ADD_COLLECTION_POINT, isAddCollectionPoint};
+  return {type: types.DEACTIVATE_ADD_COLLECTION_POINT_SUCCESS, isAddCollectionPoint};
 }
 
-export function activateCollectionPointInfoSuccess() {
-  const isCollectionPointInfo = true;
-  return {type: types.ACTIVATE_COLLECTION_POINT_INFO, isCollectionPointInfo};
-}
-
-export function displayCollectionPointInfo(key) {
-  return {type: types.DISPLAY_COLLECTION_POINT_INFO, key}
-}
-
-export function deactivateCollectionPointInfo() {
-  const isCollectionPointInfo = false;
-  return {type: types.DEACTIVATE_COLLECTION_POINT_INFO, isCollectionPointInfo};
-}
-
-export function selectCollectionPointSuccess(selectedCollectionPoint) {
-  return {type: types.SELECT_COLLECTION_POINT_SUCCESS, selectedCollectionPoint};
-}
-
+//Hover
 export function enterCollectionPoint(key) {
   return {type: ENTER_COLLECTION_POINT, key};
 }
@@ -91,16 +77,30 @@ export function getPudoLocationPoints() {
   };
 }
 
-export function selectCollectionPoint(selectedCollectionPoint) {
-  return dispatch => {
-    dispatch(selectCollectionPointSuccess(selectedCollectionPoint));
-    dispatch(activateCollectionPointInfo());
-  };
+//Collection point info
+export function deactivateDisplayCollectionPointInfo() {
+  const isDisplayCollectionPointInfo = false;
+  return {type: types.DEACTIVATE_DISPLAY_COLLECTION_POINT_INFO_SUCCESS, isDisplayCollectionPointInfo};
 }
 
-export function activateCollectionPointInfo(key) {
+export function displayCollectionPoint(key, center) {
+  const point = {
+    isDisplayCollectionPointInfo: true,
+    isDisplayPostcodeInput: false,
+    displayCollectionPoint: key,
+    mapZoom: mapZoomDisplay,
+    mapCenter: center
+  };
+
+  return {type: types.DISPLAY_COLLECTION_POINT_SUCCESS, point};
+}
+
+
+
+export function displayCollectionPointInfo(key, point) {
   return dispatch => {
-    dispatch(activateCollectionPointInfoSuccess());
-    dispatch(displayCollectionPointInfo(key));
+    const center = {lat: point.latitude, lng: point.longitude};
+
+    dispatch(displayCollectionPoint(key, center));
   }
 }

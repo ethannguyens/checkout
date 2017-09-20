@@ -12,29 +12,27 @@ export default function pudoReducer(state = initialState.pudo, action) {
     case types.GET_PUDO_COLLECTION_POINTS_SUCCESS:
       return Object.assign({}, state, {collectionPoints: action.collectionPoints});
 
-    case types.ACTIVATE_ADD_COLLECTION_POINT:
+    case types.ACTIVATE_ADD_COLLECTION_POINT_SUCESS:
       return Object.assign({}, state, {isAddCollectionPoint: action.isAddCollectionPoint});
 
     case types.DEACTIVATE_ADD_COLLECTION_POINT_SUCCESS:
       return Object.assign({}, state, {isAddCollectionPoint: action.isAddCollectionPoint});
-
-    case types.DISPLAY_COLLECTION_POINT_INFO:
-      return Object.assign({}, state, {displayCollectionPoint: action.key});
-
-    case types.ACTIVATE_COLLECTION_POINT_INFO:
-      return Object.assign({}, state, {isCollectionPointInfo: action.isCollectionPointInfo});
-
-    case types.DEACTIVATE_COLLECTION_POINT_INFO:
-      return Object.assign({}, state, {isCollectionPointInfo: action.isCollectionPointInfo});
-
-    case types.SELECT_COLLECTION_POINT_SUCCESS:
-      return Object.assign({}, state, {selectedCollectionPoint: action.selectedCollectionPoint});
 
     case types.ENTER_COLLECTION_POINT:
       return Object.assign({}, state, {activeCollectionPoint: action.key});
 
     case types.LEAVE_COLLECTION_POINT:
       return Object.assign({}, state, {activeCollectionPoint: action.key});
+
+
+    case types.ACTIVATE_DISPLAY_COLLECTION_POINT_INFO_SUCCESS:
+      return Object.assign({}, state, {isDisplayCollectionPointInfo: action.isDisplayCollectionPointInfo});
+
+    case types.DEACTIVATE_DISPLAY_COLLECTION_POINT_INFO_SUCCESS:
+      return Object.assign({}, state, {isDisplayCollectionPointInfo: action.isDisplayCollectionPointInfo});
+
+    case types.DISPLAY_COLLECTION_POINT_SUCCESS:
+      return Object.assign({}, state, action.point);
 
     default:
       return state;

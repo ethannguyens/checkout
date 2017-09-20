@@ -1,51 +1,41 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
-import {bindActionCreators} from 'redux';
-import * as pudoActions from '../../actions/pudoActions';
-import GoogleMapReact from 'google-map-react';
-import PudoNewCollectionPointMarker from './PudoNewCollectionPointMarker';
-import pudoUtils from '../../modules/pudo-utils';
+import PudoCollectionPointRow from './PudoCollectionPointRow';
 
-const PudoNewCollectionPointInfo = (({selectedCollectionPoint, deactivateCollectionPointInfo}) => (
-      <div className="pudoCollectionPoint">
-        <div className="pudoCollectionPoint__menu">
-          <button onClick={deactivateCollectionPointInfo} className="pudoCollectionPoint__menu-back">Back</button>
-        </div>
-
-        <div className="pudoCollectionPoint__info">
-          <img src="" alt="" className="pudoCollectionPoint__info-img"/>
-          <p className="pudoCollectionPoint__info-header">{selectedCollectionPoint.id}</p>
-          <p className="pudoCollectionPoint__info-distance">{selectedCollectionPoint.distanceInKm}</p>
-          <p className="pudoCollectionPoint__info-address">{pudoUtils.addressText(selectedCollectionPoint.address)}</p>
-        </div>
-
-        <div className="pudoCollectionPoint__map" style={{width: '100%', height: '400px'}}>
-          <GoogleMapReact className="pudoCollectionPointMap"
-                          center={{lat: selectedCollectionPoint.latitude, lng: selectedCollectionPoint.longitude}}
-                          defaultZoom={14}
-          >
-            <PudoNewCollectionPointMarker
-              lat={selectedCollectionPoint.latitude}
-              lng={selectedCollectionPoint.longitude}
-              text={selectedCollectionPoint.id}
-            />
-          </GoogleMapReact>
-        </div>
-
-        <div className="pudoCollectionPoint__hours">
-        </div>
-
-        <div className="pudoCollectionPoint__services">
-        </div>
-
-        <button className="pudoCollectionPoint__select">Select</button>
+const PudoNewCollectionPointInfo = (({no, point}) => {
+  return (
+    <div className="pudoCollectionPointInfo">
+      <div className="pudoCollectionPointInfo__menu">
+        <span className="pudoCollectionPointInfo__menu-back-icon" />
+        <button className="pudoCollectionPointInfo__menu-back">Back</button>
       </div>
-    ));
+      <PudoCollectionPointRow point={point}
+                              no={no}
+      />
+      <div className="pudoCollectionPointInfo__hours">
+        <div className="pudoCollectionPointInfo__hours-header">Horaires d’ouverture</div>
+        <div className="pudoCollectionPointInfo__hours-table">
+          <table>
+            {point.workingDays.map((day, key) => (
+              <tr key={key}>
+                <th>{day.day}</th>
+                {day.workingHours.map((hour, key) => (
+                  <th key={key}>{`${hour.startTime} - ${hour.endTime}`}</th>
+                  ))}
+              </tr>
+            ))}
+          </table>
+        </div>
+      </div>
+      <div className="pudoCollectionPointInfo__select">
+        <button className="pudoCollectionPointInfo__select-button">Select</button>
+      </div>
+    </div>
+  )
+});
 
 PudoNewCollectionPointInfo.propTypes = {
-  selectedCollectionPoint: PropTypes.object.isRequired,
-  deactivateCollectionPointInfo: PropTypes.func.isRequired
 };
 
 export default PudoNewCollectionPointInfo;

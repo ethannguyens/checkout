@@ -102,19 +102,19 @@
     position: absolute;
     top: 15%;
     bottom: 15%;
-    left: 15%;
-    right: 15%;
+    left: 10%;
+    right: 10%;
   }
 
   .pudoNewCollectionPoint__body-info-interact {
-    width: 220px;
+    width: 250px;
   }
 }
 
 @media (min-width: $media-lg) {
   .pudoNewCollectionPoint {
-    left: 20%;
-    right: 20%;
+    left: 15%;
+    right: 15%;
   }
 }
 
@@ -185,7 +185,7 @@
     right: 0;
     top: 50px;
     bottom: 0;
-    left: 275px;
+    left: 300px;
 
   }
 }
@@ -249,4 +249,80 @@
   text-align: right;
   position: absolute;
 }
+
+//Pudo Collection Point Info
+.pudoCollectionPointInfo__menu {
+  height: 50px;
+}
+.pudoCollectionPointInfo__menu-back-icon {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  top: 8px;
+}
+
+.pudoCollectionPointInfo__menu-back-icon:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 35%;
+  height: 35%;
+  border-left: 3px solid #686868;
+  border-bottom: 3px solid #686868;
+  -webkit-transform: translate(-30% -50%) rotate(45deg);
+  transform: translate(-30%, -50%) rotate(45deg);
+  box-sizing: border-box;
+}
+
+.pudoCollectionPointInfo__menu-back {
+  border: none;
+  background: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.pudoCollectionPointInfo__hours {
+  padding: 20px;
+  font-size: 14px;
+  color: #333;
+
+  table {
+    margin-top: 10px;
+    text-align: left;
+    border-collapse: collapse;
+  }
+
+  th {
+    font-weight: 100;
+    border: solid 1px #333;
+
+  }
+}
+
+.pudoCollectionPointInfo__select {
+  height: 70px;
+  border-top: 1px solid #eee;
+  width: 300px;
+  position: absolute;
+  bottom: 0;
+}
+
+.pudoCollectionPointInfo__select-button {
+  border: none;
+  background: #eee;
+  font-size: 14px;
+  color: #666;
+  height: 40px;
+  width: 260px;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+
+
 

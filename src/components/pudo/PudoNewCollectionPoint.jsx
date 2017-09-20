@@ -8,6 +8,7 @@ import PudoNewCollectionPointMarker from './PudoNewCollectionPointMarker';
 import PudoCollectionPointsList from './PudoCollectionPointsList';
 
 import './PudoNewCollectionPoint.scss';
+import PudoNewCollectionPointInfo from "./PudoNewCollectionPointInfo";
 
 class PudoNewCollectionPoint extends React.Component {
   constructor(props, context) {
@@ -38,7 +39,21 @@ class PudoNewCollectionPoint extends React.Component {
         Enter postcode to find nearby collection points
       </div>
     )
+  }
 
+  displayPostcodeInput() {
+    return (
+      <div className="pudoNewCollectionPoint__body-info">
+        <div className="pudoNewCollectionPoint__body-info-interact">
+          <div className="pudoNewCollectionPoint__body-info-highlight">Find your nearby collection points</div>
+          <input type="text"
+                 value={this.props.pudo.currentLocation.postcode ? this.props.pudo.currentLocation.postcode : ""}
+                 className="pudoNewCollectionPoint__body-info-input"/>
+          {this.footer()}
+        </div>
+        <PudoCollectionPointsList list={this.props.pudo.collectionPoints}/>
+      </div>
+    )
   }
 
   render() {
@@ -49,20 +64,14 @@ class PudoNewCollectionPoint extends React.Component {
           <span className="pudoNewCollectionPoint__close" onClick={this.deactivateAddCollectionPoint}/>
         </div>
         <div className="pudoNewCollectionPoint__body">
-          <div className="pudoNewCollectionPoint__body-info">
-            <div className="pudoNewCollectionPoint__body-info-interact">
-              <div className="pudoNewCollectionPoint__body-info-highlight">Find your nearby collection points</div>
-              <input type="text"
-                     value={this.props.pudo.currentLocation.postcode ? this.props.pudo.currentLocation.postcode : ""}
-                     className="pudoNewCollectionPoint__body-info-input"/>
-              {this.footer()}
-            </div>
-            <PudoCollectionPointsList list={this.props.pudo.collectionPoints}/>
-          </div>
+          {this.props.pudo.isDisplayPostcodeInput && this.displayPostcodeInput()}
+          {this.props.pudo.isDisplayCollectionPointInfo &&
+          <PudoNewCollectionPointInfo no={this.props.pudo.displayCollectionPoint}
+                                      point={this.props.pudo.collectionPoints[this.props.pudo.displayCollectionPoint]}/>}
           <div className="pudoNewCollectionPoint__body-map">
             <GoogleMapReact
-              center={{lat: 45.848923, lng: 1.4288653}}
-              defaultZoom={11}
+              center={this.props.pudo.mapCenter}
+              defaultZoom={this.props.pudo.mapZoom}
             >
               {this.props.pudo.collectionPoints.map((collection, key) => <PudoNewCollectionPointMarker
                 key={key}

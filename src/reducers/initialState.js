@@ -7,10 +7,13 @@ export default {
       postcode: ''
     },
     isAddCollectionPoint: false,
-    isCollectionPointInfo: false,
+    isDisplayPostcodeInput: true,
+    isDisplayCollectionPointInfo: false,
     collectionPoints: [],
     activeCollectionPoint: -1,
-    displayCollectionPoint: -1
+    displayCollectionPoint: -1,
+    mapCenter: {lat: 45.848923, lng: 1.4288653},
+    mapZoom: 11,
   },
   ajaxCallsInProgress: 0
 };

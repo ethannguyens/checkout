@@ -15,6 +15,7 @@ const mockCollectionPoints = [
       "postcode": "87400",
       "countryCode": null
     },
+    "services": ["pay-point", "transferwise","Having Fun"],
     "workingDays": [
       {
         "day": "MONDAY",
@@ -308,6 +309,7 @@ const mockCollectionPoints = [
         "workingHours": []
       }
     ],
+    "services": ["pay-point", "transferwise","Having Fun"],
     "distanceInKm": 15868
   }
 ];
