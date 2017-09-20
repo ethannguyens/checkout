@@ -8,7 +8,7 @@ const PudoCollectionPointsList = ({list}) => {
     <div className="pudoCollectionPointsList">
       {list.map((point, key) => <PudoCollectionPointRow
         key={key}
-        no={++key}
+        no={key}
         point={point}
       />)}
     </div>

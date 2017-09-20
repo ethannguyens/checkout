@@ -27,6 +27,12 @@ export default function pudoReducer(state = initialState.pudo, action) {
     case types.SELECT_COLLECTION_POINT_SUCCESS:
       return Object.assign({}, state, {selectedCollectionPoint: action.selectedCollectionPoint});
 
+    case types.ENTER_COLLECTION_POINT:
+      return Object.assign({}, state, {activeCollectionPoint: action.key});
+
+    case types.LEAVE_COLLECTION_POINT:
+      return Object.assign({}, state, {activeCollectionPoint: action.key});
+
     default:
       return state;
   }

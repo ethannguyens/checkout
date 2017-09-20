@@ -1,6 +1,8 @@
 import PudoApi from '../api/PudoApi';
 import * as types from './actionTypes';
 import {beginAjaxCall} from './ajaxStatusActions';
+import {ENTER_COLLECTION_POINT} from "./actionTypes";
+import {LEAVE_COLLECTION_POINT} from "./actionTypes";
 
 export function loadPudoSavedAddressesSuccess(savedAddresses) {
   return {type: types.LOAD_PUDO_SAVED_ADDRESSES_SUCCESS, savedAddresses};
@@ -36,6 +38,15 @@ export function deactivateCollectionPointInfo() {
 
 export function selectCollectionPointSuccess(selectedCollectionPoint) {
   return {type: types.SELECT_COLLECTION_POINT_SUCCESS, selectedCollectionPoint};
+}
+
+export function enterCollectionPoint(key) {
+  return {type: ENTER_COLLECTION_POINT, key};
+}
+
+export function leaveCollectionPoint() {
+  const key = -1;
+  return {type: LEAVE_COLLECTION_POINT, key}
 }
 
 export function loadPudoSavedAddresses() {

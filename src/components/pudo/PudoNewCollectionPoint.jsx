@@ -17,8 +17,6 @@ class PudoNewCollectionPoint extends React.Component {
 
     this.deactivateAddCollectionPoint = this.deactivateAddCollectionPoint.bind(this);
     this.footer = this.footer.bind(this);
-    this.onMarker = this.onMarker.bind(this);
-    this.leaveMarker = this.leaveMarker.bind(this);
   }
 
   deactivateAddCollectionPoint() {
@@ -29,7 +27,8 @@ class PudoNewCollectionPoint extends React.Component {
   footer() {
     if (this.props.pudo.collectionPoints.length > 0) return (
       <div className="pudoNewCollectionPoint__body-info-footer">
-        <span className="pudoNewCollectionPoint__body-info-footer-count">{this.props.pudo.collectionPoints.length} </span>
+        <span
+          className="pudoNewCollectionPoint__body-info-footer-count">{this.props.pudo.collectionPoints.length} </span>
         collection points found
       </div>
     );
@@ -40,16 +39,6 @@ class PudoNewCollectionPoint extends React.Component {
       </div>
     )
 
-  }
-
-  onMarker(key, childProps) {
-    document.querySelector(`#pudoCollectionPointRow-${key}`).setAttribute('active', 'true');
-    document.querySelector(`#pudoNewCollectionPointMarker-${key}`).setAttribute('active', 'true');
-  }
-
-  leaveMarker(key, childProps) {
-    document.querySelector(`#pudoCollectionPointRow-${key}`).removeAttribute('active');
-    document.querySelector(`#pudoNewCollectionPointMarker-${key}`).removeAttribute('active');
   }
 
   render() {
@@ -74,16 +63,12 @@ class PudoNewCollectionPoint extends React.Component {
             <GoogleMapReact
               center={{lat: 45.848923, lng: 1.4288653}}
               defaultZoom={11}
-              onChildClick={(key, childProps) => this.props.actions.selectCollectionPoint(childProps.data)}
-              onChildMouseEnter={this.onMarker}
-              onChildMouseLeave={this.leaveMarker}
             >
               {this.props.pudo.collectionPoints.map((collection, key) => <PudoNewCollectionPointMarker
                 key={key}
                 lat={collection.latitude}
                 lng={collection.longitude}
-                no={++key}
-                data={collection}
+                no={key}
               />)}
             </GoogleMapReact>
           </div>

@@ -9,7 +9,8 @@ export default {
     isAddCollectionPoint: false,
     isCollectionPointInfo: false,
     selectedCollectionPoint: {},
-    collectionPoints: []
+    collectionPoints: [],
+    activeCollectionPoint: -1,
   },
   ajaxCallsInProgress: 0
 };
