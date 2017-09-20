@@ -67,11 +67,12 @@ class PudoNewCollectionPoint extends React.Component {
           {this.props.pudo.isDisplayPostcodeInput && this.displayPostcodeInput()}
           {this.props.pudo.isDisplayCollectionPointInfo &&
           <PudoNewCollectionPointInfo no={this.props.pudo.displayCollectionPoint}
+                                      backFunc={this.props.actions.deactivateDisplayCollectionPointInfo}
                                       point={this.props.pudo.collectionPoints[this.props.pudo.displayCollectionPoint]}/>}
           <div className="pudoNewCollectionPoint__body-map">
             <GoogleMapReact
               center={this.props.pudo.mapCenter}
-              defaultZoom={this.props.pudo.mapZoom}
+              zoom={this.props.pudo.mapZoom}
             >
               {this.props.pudo.collectionPoints.map((collection, key) => <PudoNewCollectionPointMarker
                 key={key}

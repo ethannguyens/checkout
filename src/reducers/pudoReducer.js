@@ -28,11 +28,12 @@ export default function pudoReducer(state = initialState.pudo, action) {
     case types.ACTIVATE_DISPLAY_COLLECTION_POINT_INFO_SUCCESS:
       return Object.assign({}, state, {isDisplayCollectionPointInfo: action.isDisplayCollectionPointInfo});
 
-    case types.DEACTIVATE_DISPLAY_COLLECTION_POINT_INFO_SUCCESS:
-      return Object.assign({}, state, {isDisplayCollectionPointInfo: action.isDisplayCollectionPointInfo});
-
     case types.DISPLAY_COLLECTION_POINT_SUCCESS:
       return Object.assign({}, state, action.point);
+
+    case types.DEACTIVATE_DISPLAY_COLLECTION_POINT_INFO_SUCCESS:
+      action.newState.mapCenter = state.latlng;
+      return Object.assign({}, state, action.newState);
 
     default:
       return state;

@@ -251,6 +251,9 @@
 }
 
 //Pudo Collection Point Info
+.pudoCollectionPointInfo {
+  width: 300px;
+}
 .pudoCollectionPointInfo__menu {
   height: 50px;
 }
@@ -297,10 +300,9 @@
     border-collapse: collapse;
   }
 
-  th {
+  td{
     font-weight: 100;
     border: solid 1px #333;
-
   }
 }
 

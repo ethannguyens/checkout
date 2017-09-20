@@ -24,7 +24,7 @@ class PudoCollectionPointRow extends React.Component {
   }
 
   onClick() {
-    this.props.actions.activateCollectionPointInfo(this.props.no);
+    this.props.actions.displayCollectionPointInfo(this.props.no, this.props.pudo.collectionPoints[this.props.no]);
   }
 
   render() {

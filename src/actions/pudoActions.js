@@ -4,7 +4,8 @@ import {beginAjaxCall} from './ajaxStatusActions';
 import {ENTER_COLLECTION_POINT} from "./actionTypes";
 import {LEAVE_COLLECTION_POINT} from "./actionTypes";
 
-const mapZoomDisplay = 14;
+const mapZoomDisplay = 15;
+const mapZoomDefault = 11;
 
   export function loadPudoSavedAddressesSuccess(savedAddresses) {
   return {type: types.LOAD_PUDO_SAVED_ADDRESSES_SUCCESS, savedAddresses};
@@ -78,11 +79,6 @@ export function getPudoLocationPoints() {
 }
 
 //Collection point info
-export function deactivateDisplayCollectionPointInfo() {
-  const isDisplayCollectionPointInfo = false;
-  return {type: types.DEACTIVATE_DISPLAY_COLLECTION_POINT_INFO_SUCCESS, isDisplayCollectionPointInfo};
-}
-
 export function displayCollectionPoint(key, center) {
   const point = {
     isDisplayCollectionPointInfo: true,
@@ -93,6 +89,17 @@ export function displayCollectionPoint(key, center) {
   };
 
   return {type: types.DISPLAY_COLLECTION_POINT_SUCCESS, point};
+}
+
+export function deactivateDisplayCollectionPointInfo() {
+    const newState = {
+      isDisplayCollectionPointInfo: false,
+      isDisplayPostcodeInput: true,
+      displayCollectionPoint: -1,
+      mapZoom: mapZoomDefault
+    };
+
+  return {type: types.DEACTIVATE_DISPLAY_COLLECTION_POINT_INFO_SUCCESS, newState};
 }
 
 
