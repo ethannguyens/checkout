@@ -26,9 +26,13 @@ export function deactivateAddCollectionPoint() {
   return {type: types.DEACTIVATE_ADD_COLLECTION_POINT, isAddCollectionPoint};
 }
 
-export function activateCollectionPointInfo() {
+export function activateCollectionPointInfoSuccess() {
   const isCollectionPointInfo = true;
   return {type: types.ACTIVATE_COLLECTION_POINT_INFO, isCollectionPointInfo};
+}
+
+export function displayCollectionPointInfo(key) {
+  return {type: types.DISPLAY_COLLECTION_POINT_INFO, key}
 }
 
 export function deactivateCollectionPointInfo() {
@@ -92,4 +96,11 @@ export function selectCollectionPoint(selectedCollectionPoint) {
     dispatch(selectCollectionPointSuccess(selectedCollectionPoint));
     dispatch(activateCollectionPointInfo());
   };
+}
+
+export function activateCollectionPointInfo(key) {
+  return dispatch => {
+    dispatch(activateCollectionPointInfoSuccess());
+    dispatch(displayCollectionPointInfo(key));
+  }
 }

@@ -22,7 +22,7 @@ class PudoNewCollectionPointMarker extends React.Component {
   }
 
   onClick() {
-
+    this.props.actions.activateCollectionPointInfo(this.props.no);
   }
 
   render() {
