@@ -18,6 +18,7 @@ class PudoNewCollectionPoint extends React.Component {
 
     this.deactivateAddCollectionPoint = this.deactivateAddCollectionPoint.bind(this);
     this.footer = this.footer.bind(this);
+    this.customClass = this.customClass.bind(this);
   }
 
   deactivateAddCollectionPoint() {
@@ -43,7 +44,7 @@ class PudoNewCollectionPoint extends React.Component {
 
   displayPostcodeInput() {
     return (
-      <div className="pudoNewCollectionPoint__body-info">
+      <div className={`pudoNewCollectionPoint__body-info ${this.customClass()}`}>
         <div className="pudoNewCollectionPoint__body-info-interact">
           <div className="pudoNewCollectionPoint__body-info-highlight">Find your nearby collection points</div>
           <input type="text"
@@ -56,9 +57,13 @@ class PudoNewCollectionPoint extends React.Component {
     )
   }
 
+  customClass() {
+    if (!this.props.pudo.isDisplayCollectionPointInfo) return "isNotDisplayCollectionPointInfo";
+  }
+
   render() {
     return (
-      <div className="pudoNewCollectionPoint">
+      <div className={`pudoNewCollectionPoint ${this.customClass()}`}>
         <div className="pudoNewCollectionPoint__header">
           <div className="pudoNewCollectionPoint__header-text">Add a Collection Point</div>
           <span className="pudoNewCollectionPoint__close" onClick={this.deactivateAddCollectionPoint}/>

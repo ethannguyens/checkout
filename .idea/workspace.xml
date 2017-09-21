@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="528791f4-4ef4-48db-a7f0-215c3a4e4152" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.jsx" afterPath="$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.scss" afterPath="$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,7 +23,7 @@
     <favorites_list name="checkout" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6505552">
+    <splitter split-orientation="horizontal" split-proportion="0.5910503">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="Pudo.jsx" pinned="false" current-in-tab="false">
@@ -61,26 +62,72 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="PudoNewCollectionPoint.jsx" pinned="false" current-in-tab="false">
+          <file leaf-file-name="PudoNewCollectionPoint.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="214">
-                  <caret line="66" column="81" lean-forward="true" selection-start-line="66" selection-start-column="81" selection-end-line="70" selection-end-column="121" />
+                <state relative-caret-position="187">
+                  <caret line="60" column="94" lean-forward="false" selection-start-line="60" selection-start-column="63" selection-end-line="60" selection-end-column="94" />
                   <folding>
                     <element signature="e#0#25#0" expanded="true" />
-                    <marker date="1505927581000" expanded="true" signature="3096:3396" ph="..." />
+                    <marker date="1505997708000" expanded="true" signature="1674:2041" ph="..." />
+                    <marker date="1505997708000" expanded="true" signature="1816:1925" ph="..." />
+                    <marker date="1505997708000" expanded="true" signature="2117:2140" ph="..." />
+                    <marker date="1505997708000" expanded="true" signature="2415:2626" ph="..." />
+                    <marker date="1505997708000" expanded="true" signature="2611:2620" ph="..." />
+                    <marker date="1505997708000" expanded="true" signature="2681:3648" ph="..." />
+                    <marker date="1505997708000" expanded="true" signature="3221:3616" ph="..." />
+                    <marker date="1505997708000" expanded="true" signature="3432:3584" ph="..." />
+                    <marker date="1505997708000" expanded="true" signature="3617:3633" ph="..." />
+                    <marker date="1505997708000" expanded="true" signature="3617:3642" ph="..." />
+                    <marker date="1505997708000" expanded="true" signature="3617:3648" ph="..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="PudoNewCollectionPointInfo.jsx" pinned="false" current-in-tab="true">
+          <file leaf-file-name="PudoNewCollectionPointInfo.jsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPointInfo.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="386">
-                  <caret line="26" column="10" lean-forward="false" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+                <state relative-caret-position="345">
+                  <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PudoSavedAddressText.jsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/pudo/PudoSavedAddressText.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="390">
+                  <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+                  <folding>
+                    <element signature="e#0#25#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PudoSavedAddressList.jsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/pudo/PudoSavedAddressList.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="10" />
+                  <folding>
+                    <element signature="e#0#25#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PudoNewCollectionPointInfoTable.jsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPointInfoTable.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="150">
+                  <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+                  <folding>
+                    <element signature="e#0#25#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -106,8 +153,8 @@
           <file leaf-file-name="initialState.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/reducers/initialState.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+                <state relative-caret-position="15">
+                  <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
                   <folding />
                 </state>
               </provider>
@@ -116,8 +163,8 @@
           <file leaf-file-name="mockCollectionPoints.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/api/mockCollectionPoints.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-3779">
-                  <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="21" />
+                <state relative-caret-position="-14">
+                  <caret line="272" column="30" lean-forward="true" selection-start-line="272" selection-start-column="30" selection-end-line="272" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
@@ -148,8 +195,8 @@
           <file leaf-file-name="PudoNewCollectionPoint.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="169">
-                  <caret line="304" column="16" lean-forward="false" selection-start-line="304" selection-start-column="16" selection-end-line="304" selection-end-column="16" />
+                <state relative-caret-position="493">
+                  <caret line="353" column="3" lean-forward="true" selection-start-line="353" selection-start-column="3" selection-end-line="353" selection-end-column="3" />
                   <folding />
                 </state>
               </provider>
@@ -161,9 +208,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>PudoCollectionPoint</find>
-      <find>close</find>
-      <find>-</find>
       <find>PudoNewCollectionPointMap</find>
       <find>pudoAddCollectionPoint-close</find>
       <find>pudoAddCollectionPointPostcode-infoTop</find>
@@ -189,8 +233,11 @@
       <find>interact</find>
       <find>left</find>
       <find>media</find>
-      <find>ACTIVATE_ADD_COLLECTION_POINT_SUCESS</find>
+      <find>button</find>
+      <find>isAddCollectionPoint</find>
       <find>DISPLAY_COLLECTION_POINT_SUCCESS</find>
+      <find>ACTIVATE_ADD_COLLECTION_POINT_SUCESS</find>
+      <find>map</find>
     </findStrings>
     <replaceStrings>
       <replace>textIt</replace>
@@ -264,9 +311,9 @@
         <option value="$PROJECT_DIR$/src/reducers/pudoReducer.js" />
         <option value="$PROJECT_DIR$/src/components/pudo/PudoCollectionPointRow.jsx" />
         <option value="$PROJECT_DIR$/src/actions/pudoActions.js" />
-        <option value="$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.scss" />
-        <option value="$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.jsx" />
         <option value="$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPointInfo.jsx" />
+        <option value="$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.jsx" />
+        <option value="$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.scss" />
       </list>
     </option>
   </component>
@@ -284,10 +331,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1920" />
-    <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="x" value="755" />
+    <option name="y" value="-1057" />
+    <option name="width" value="1440" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -319,19 +366,6 @@
               <item name="checkout" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="checkout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="checkout" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="checkout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="checkout" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="pudo" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -344,7 +378,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
-    <property name="SearchEverywhereHistoryKey" value="red&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/reducers/pudoReducer.js&#10;action&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/actions/pudoActions.js&#10;mock&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/api/mockCollectionPoints.js&#10;scss&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/components/pudo/PudoNewCollectionPoint.scss&#10;pudoAc&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/actions/pudoActions.js&#10;pudored&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/reducers/pudoReducer.js&#10;webpack&#9;FILE&#9;file:///Users/nguyene/Study/checkout/webpack.config.js&#10;src&#9;FILE&#9;file:///Users/nguyene/Study/checkout/tools/srcServer.js&#10;configure&#9;FILE&#9;file:///Users/ethannguyen/Study/checkout/src/store/configureStore.js" />
+    <property name="SearchEverywhereHistoryKey" value="map&#9;null&#9;null&#10;red&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/reducers/pudoReducer.js&#10;action&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/actions/pudoActions.js&#10;mock&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/api/mockCollectionPoints.js&#10;scss&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/components/pudo/PudoNewCollectionPoint.scss&#10;pudoAc&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/actions/pudoActions.js&#10;pudored&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/reducers/pudoReducer.js&#10;webpack&#9;FILE&#9;file:///Users/nguyene/Study/checkout/webpack.config.js&#10;src&#9;FILE&#9;file:///Users/nguyene/Study/checkout/tools/srcServer.js&#10;configure&#9;FILE&#9;file:///Users/ethannguyen/Study/checkout/src/store/configureStore.js" />
     <property name="js-jscs-nodeInterpreter" value="$USER_HOME$/.nvm/versions/node/v7.0.0/bin/node" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v6.10.0/bin/node" />
     <property name="editor.config.accepted" value="true" />
@@ -466,12 +500,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120894000" />
+    <option name="totallyTimeSpent" value="124640000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="755" y="-1057" width="1920" height="1057" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1937862" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15271196" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16632016" sideWeight="0.5018431" order="7" side_tool="true" content_ui="tabs" />
@@ -479,7 +514,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17047817" sideWeight="0.49815693" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28586277" sideWeight="0.49815693" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -535,7 +570,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/delivery/Form.jsx" />
     <entry file="file://$PROJECT_DIR$/tools/srcServer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -749,8 +783,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/pudo/PudoSavedAddressText.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="390">
+          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
@@ -759,9 +793,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/pudo/PudoSavedAddressList.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -778,7 +814,7 @@
         <state relative-caret-position="195">
           <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -820,57 +856,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/mockCollectionPoints.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3779">
-          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/initialState.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/pudoReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/pudoActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/pudo/PudoCollectionPointRow.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="66" column="81" lean-forward="true" selection-start-line="66" selection-start-column="81" selection-end-line="70" selection-end-column="121" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-            <marker date="1505927581000" expanded="true" signature="3096:3396" ph="..." />
           </folding>
         </state>
       </provider>
@@ -885,21 +876,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.scss">
+    <entry file="file://$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPointInfo.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="304" column="16" lean-forward="false" selection-start-line="304" selection-start-column="16" selection-end-line="304" selection-end-column="16" />
+        <state relative-caret-position="345">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_github.com_DefinitelyTyped_DefinitelyTyped_raw_master_types_react-redux_index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="149" column="5" lean-forward="false" selection-start-line="149" selection-start-column="5" selection-end-line="149" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPointInfo.jsx">
+    <entry file="file://$PROJECT_DIR$/src/reducers/initialState.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="26" column="10" lean-forward="false" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+        <state relative-caret-position="15">
+          <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/mockCollectionPoints.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14">
+          <caret line="272" column="30" lean-forward="true" selection-start-line="272" selection-start-column="30" selection-end-line="272" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/pudoActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/pudoReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#48#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="60" column="94" lean-forward="false" selection-start-line="60" selection-start-column="63" selection-end-line="60" selection-end-column="94" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+            <marker date="1505997708000" expanded="true" signature="1674:2041" ph="..." />
+            <marker date="1505997708000" expanded="true" signature="1816:1925" ph="..." />
+            <marker date="1505997708000" expanded="true" signature="2117:2140" ph="..." />
+            <marker date="1505997708000" expanded="true" signature="2415:2626" ph="..." />
+            <marker date="1505997708000" expanded="true" signature="2611:2620" ph="..." />
+            <marker date="1505997708000" expanded="true" signature="2681:3648" ph="..." />
+            <marker date="1505997708000" expanded="true" signature="3221:3616" ph="..." />
+            <marker date="1505997708000" expanded="true" signature="3432:3584" ph="..." />
+            <marker date="1505997708000" expanded="true" signature="3617:3633" ph="..." />
+            <marker date="1505997708000" expanded="true" signature="3617:3642" ph="..." />
+            <marker date="1505997708000" expanded="true" signature="3617:3648" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="353" column="3" lean-forward="true" selection-start-line="353" selection-start-column="3" selection-end-line="353" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
