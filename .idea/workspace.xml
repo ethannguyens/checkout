@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="528791f4-4ef4-48db-a7f0-215c3a4e4152" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.jsx" afterPath="$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.scss" afterPath="$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -195,8 +194,8 @@
           <file leaf-file-name="PudoNewCollectionPoint.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="493">
-                  <caret line="353" column="3" lean-forward="true" selection-start-line="353" selection-start-column="3" selection-end-line="353" selection-end-column="3" />
+                <state relative-caret-position="279">
+                  <caret line="126" column="16" lean-forward="false" selection-start-line="126" selection-start-column="16" selection-end-line="126" selection-end-column="16" />
                   <folding />
                 </state>
               </provider>
@@ -500,10 +499,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124640000" />
+    <option name="totallyTimeSpent" value="125178000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="755" y="-1057" width="1920" height="1057" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15271196" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -514,7 +514,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28586277" sideWeight="0.49815693" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28586277" sideWeight="0.49815693" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -951,8 +951,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="353" column="3" lean-forward="true" selection-start-line="353" selection-start-column="3" selection-end-line="353" selection-end-column="3" />
+        <state relative-caret-position="279">
+          <caret line="126" column="16" lean-forward="false" selection-start-line="126" selection-start-column="16" selection-end-line="126" selection-end-column="16" />
           <folding />
         </state>
       </provider>
