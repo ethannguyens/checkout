@@ -12,13 +12,20 @@ const mapZoomDefault = 11;
 }
 
 export function getPudoCurrentLocationSuccess(currentLocation) {
-  return {type: types.GET_PUDO_CURRENT_POSITION_SUCCESS, currentLocation};
+  return {type: types.UPDATE_PUDO_CURRENT_POSITION_SUCCESS, currentLocation};
+}
+
+export function updatePudoCurrentLocationSuccess(currentLocation) {
+  return {type: types.UPDATE_PUDO_CURRENT_POSITION_SUCCESS, currentLocation};
 }
 
 export function getPudoCollectionPointsSuccess(collectionPoints) {
   return {type: types.GET_PUDO_COLLECTION_POINTS_SUCCESS, collectionPoints};
 }
 
+export function updatetPudoCollectionPointsSuccess(collectionPoints) {
+  return {type: types.UPDATE_PUDO_COLLECTION_POINTS_SUCCESS, collectionPoints};
+}
 //Open Add new collection point menu
 export function activateAddCollectionPoint() {
   const isAddCollectionPoint = true;
@@ -58,6 +65,13 @@ export function getCurrentLocationCollectionPoints() {
   };
 }
 
+export function updateCurrentLoationCollectionPoints() {
+    return dispatch => {
+      dispatch();
+      dispatch();
+    }
+}
+
 export function getPudoCurrentLocation() {
   return dispatch => {
     return PudoApi.getCurrentLocation().then(currentLocation => {
@@ -66,6 +80,13 @@ export function getPudoCurrentLocation() {
       console.log(error);
     });
   };
+}
+
+//user manually enter shipping address
+export function updatePudoCurrentLocation(currentLocation) {
+    return dispatch => {
+      dispatch(getPudoCurrentLocationSuccess(currentLocation));
+    }
 }
 
 export function getPudoLocationPoints() {

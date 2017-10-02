@@ -2,15 +2,9 @@ import * as secrets from '../modules/secrets';
 import mockSavedAddresses from './mockSavedAddresses';
 import mockCollectionPoints from './mockCollectionPoints';
 
-let GoogleMapsLoader = require('google-maps');
-
-GoogleMapsLoader.KEY = secrets.googleKey;
-
 function getAddress(latlng) {
-  let geocoder;
   return new Promise ((resolve, reject) => {
-    GoogleMapsLoader.load((google) => {
-      geocoder = new google.maps.Geocoder;
+      let geocoder = new google.maps.Geocoder;
 
       geocoder.geocode({'location': latlng}, function(results, status) {
         if (status === 'OK') {
@@ -27,7 +21,6 @@ function getAddress(latlng) {
         }
       });
     });
-  });
 }
 
 class PudoApi {

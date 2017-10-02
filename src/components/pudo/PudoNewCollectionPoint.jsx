@@ -19,6 +19,7 @@ class PudoNewCollectionPoint extends React.Component {
     this.deactivateAddCollectionPoint = this.deactivateAddCollectionPoint.bind(this);
     this.footer = this.footer.bind(this);
     this.customClass = this.customClass.bind(this);
+    this.componentDidMount = this.componentDidMount.bind(this);
   }
 
   deactivateAddCollectionPoint() {
@@ -42,13 +43,30 @@ class PudoNewCollectionPoint extends React.Component {
     )
   }
 
+  componentDidMount() {
+    const input = document.querySelector('.pudoNewCollectionPoint__body-info-input');
+    const searchBox = new google.maps.places.SearchBox(input);
+    searchBox.addListener('places_changed', () => {
+      const places = searchBox.getPlaces();
+      let currentLocation = {
+        latlng: {lat: places[0].geometry.location.lat(), lng: places[0].geometry.location.lng()},
+        address: places[0].formatted_address,
+        postcode: ''
+      };
+
+      console.log(currentLocation);
+
+      this.props.actions.updatePudoCurrentLocation(currentLocation);
+    });
+  }
+
   displayPostcodeInput() {
     return (
       <div className={`pudoNewCollectionPoint__body-info ${this.customClass()}`}>
         <div className="pudoNewCollectionPoint__body-info-interact">
           <div className="pudoNewCollectionPoint__body-info-highlight">Find your nearby collection points</div>
           <input type="text"
-                 value={this.props.pudo.currentLocation.postcode ? this.props.pudo.currentLocation.postcode : ""}
+                 placeholder={this.props.pudo.currentLocation.postcode}
                  className="pudoNewCollectionPoint__body-info-input"/>
           {this.footer()}
         </div>
