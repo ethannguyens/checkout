@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="528791f4-4ef4-48db-a7f0-215c3a4e4152" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.jsx" afterPath="$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.scss" afterPath="$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,7 +24,7 @@
     <favorites_list name="checkout" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.60286784">
+    <splitter split-orientation="horizontal" split-proportion="0.5595855">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="Pudo.jsx" pinned="false" current-in-tab="false">
@@ -37,25 +39,15 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="PudoNewCollectionPoint.jsx" pinned="false" current-in-tab="false">
+          <file leaf-file-name="PudoNewCollectionPoint.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="67" column="70" lean-forward="true" selection-start-line="67" selection-start-column="70" selection-end-line="67" selection-end-column="70" />
+                <state relative-caret-position="338">
+                  <caret line="82" column="75" lean-forward="true" selection-start-line="82" selection-start-column="75" selection-end-line="82" selection-end-column="75" />
                   <folding>
                     <element signature="e#0#25#0" expanded="true" />
-                    <marker date="1507024737000" expanded="true" signature="2294:2619" ph="..." />
+                    <marker date="1507041522000" expanded="true" signature="2546:3170" ph="..." />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PudoNewCollectionPoint.scss" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="231">
-                  <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -69,6 +61,16 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="225">
                   <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/webpack.config.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="368">
+                  <caret line="48" column="2" lean-forward="true" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="2" />
                   <folding />
                 </state>
               </provider>
@@ -117,7 +119,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="pudoReducer.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="pudoReducer.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/reducers/pudoReducer.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="192">
@@ -129,14 +131,22 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="PudoNewCollectionPoint.scss" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="429">
+                  <caret line="98" column="24" lean-forward="true" selection-start-line="98" selection-start-column="24" selection-end-line="98" selection-end-column="24" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-second>
     </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pudoAddCollectionPointPostcode-infoTop</find>
-      <find>class=&quot;pudoNewCollectionPoint__body-info&quot;</find>
       <find>pudoNewCollectionPoint__body-map</find>
       <find>pudo-</find>
       <find>pudoAddCollectionPoint__body-info</find>
@@ -160,11 +170,13 @@
       <find>button</find>
       <find>isAddCollectionPoint</find>
       <find>map</find>
-      <find>ACTIVATE_ADD_COLLECTION_POINT_SUCESS</find>
       <find>DISPLAY_COLLECTION_POINT_SUCCESS</find>
       <find>input</find>
       <find>customClass</find>
       <find>console.lo</find>
+      <find>48%</find>
+      <find>ACTIVATE_ADD_COLLECTION_POINT_SUCESS</find>
+      <find>current</find>
     </findStrings>
     <replaceStrings>
       <replace>textIt</replace>
@@ -200,7 +212,6 @@
         <option value="$PROJECT_DIR$/src/components/delivery/AddressFieldLabel.jsx" />
         <option value="$PROJECT_DIR$/src/components/pudo/pudo.jsx" />
         <option value="$PROJECT_DIR$/src/routes.js" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/src/api/getPudoSavedAddresses.js" />
         <option value="$PROJECT_DIR$/src/styles/partials/grid.scss" />
         <option value="$PROJECT_DIR$/src/styles/main.scss" />
@@ -239,8 +250,9 @@
         <option value="$PROJECT_DIR$/src/actions/actionTypes.js" />
         <option value="$PROJECT_DIR$/src/actions/pudoActions.js" />
         <option value="$PROJECT_DIR$/src/reducers/pudoReducer.js" />
-        <option value="$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.jsx" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.scss" />
+        <option value="$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.jsx" />
       </list>
     </option>
   </component>
@@ -336,7 +348,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
-    <property name="SearchEverywhereHistoryKey" value="secret&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/modules/secrets.js&#10;secre&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/modules/secrets.js&#10;map&#9;null&#9;null&#10;red&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/reducers/pudoReducer.js&#10;action&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/actions/pudoActions.js&#10;mock&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/api/mockCollectionPoints.js&#10;scss&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/components/pudo/PudoNewCollectionPoint.scss&#10;pudoAc&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/actions/pudoActions.js&#10;pudored&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/reducers/pudoReducer.js&#10;webpack&#9;FILE&#9;file:///Users/nguyene/Study/checkout/webpack.config.js&#10;src&#9;FILE&#9;file:///Users/nguyene/Study/checkout/tools/srcServer.js&#10;configure&#9;FILE&#9;file:///Users/ethannguyen/Study/checkout/src/store/configureStore.js" />
+    <property name="SearchEverywhereHistoryKey" value="webpacj&#9;FILE&#9;file:///Users/nguyene/Study/checkout/webpack.config.js&#10;secret&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/modules/secrets.js&#10;secre&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/modules/secrets.js&#10;map&#9;null&#9;null&#10;red&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/reducers/pudoReducer.js&#10;action&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/actions/pudoActions.js&#10;mock&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/api/mockCollectionPoints.js&#10;scss&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/components/pudo/PudoNewCollectionPoint.scss&#10;pudoAc&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/actions/pudoActions.js&#10;pudored&#9;FILE&#9;file:///Users/nguyene/Study/checkout/src/reducers/pudoReducer.js&#10;webpack&#9;FILE&#9;file:///Users/nguyene/Study/checkout/webpack.config.js&#10;src&#9;FILE&#9;file:///Users/nguyene/Study/checkout/tools/srcServer.js&#10;configure&#9;FILE&#9;file:///Users/ethannguyen/Study/checkout/src/store/configureStore.js" />
     <property name="js-jscs-nodeInterpreter" value="$USER_HOME$/.nvm/versions/node/v7.0.0/bin/node" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v6.10.0/bin/node" />
     <property name="editor.config.accepted" value="true" />
@@ -352,6 +364,9 @@
     <property name="node.js.selected.package.standard" value="" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/pudo" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/modules" />
       <recent name="$PROJECT_DIR$/src/components" />
@@ -458,7 +473,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134421000" />
+    <option name="totallyTimeSpent" value="138208000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="755" y="-1057" width="1920" height="1057" extended-state="6" />
@@ -620,14 +635,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/google-map-react/lib/index.js" />
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/App.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -888,22 +895,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.jsx">
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="67" column="70" lean-forward="true" selection-start-line="67" selection-start-column="70" selection-end-line="67" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-            <marker date="1507024737000" expanded="true" signature="2294:2619" ph="..." />
-          </folding>
+        <state relative-caret-position="368">
+          <caret line="48" column="2" lean-forward="true" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+        <state relative-caret-position="429">
+          <caret line="98" column="24" lean-forward="true" selection-start-line="98" selection-start-column="24" selection-end-line="98" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="82" column="75" lean-forward="true" selection-start-line="82" selection-start-column="75" selection-end-line="82" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+            <marker date="1507041522000" expanded="true" signature="2546:3170" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
