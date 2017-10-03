@@ -63,7 +63,6 @@ class PudoNewCollectionPoint extends React.Component {
   }
 
   getCurrentLocation() {
-    console.log('get Current location');
     this.props.actions.getCurrentLocationCollectionPoints();
   }
 

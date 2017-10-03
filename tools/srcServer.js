@@ -4,6 +4,14 @@ import path from 'path';
 import config from '../webpack.config';
 import open from 'open';
 
+
+let fs = require('fs');
+let http = require('http');
+let https = require('https');
+let privateKey  = fs.readFileSync(path.join( __dirname, '../localhost-ssl/key.pem'), 'utf8');
+let certificate = fs.readFileSync(path.join( __dirname, '../localhost-ssl/cert.pem'), 'utf8');
+
+let credentials = {key: privateKey, cert: certificate};
 /* eslint-disable no-console */
 process.env.NODE_ENV = 'dev';
 
@@ -22,10 +30,18 @@ app.get('*', function(req, res) {
   res.sendFile(path.join( __dirname, '../src/index.html'));
 });
 
-app.listen(port, function(err) {
-  if (err) {
-    console.log(err);
-  } else {
-    open(`http://localhost:${port}`);
-  }
-});
+let httpServer = http.createServer(app);
+let httpsServer = https.createServer(credentials, app);
+
+httpServer.listen(3000);
+httpsServer.listen(3003);
+open(`https://localhost:${3003}`);
+
+// app.listen(port, function(err) {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     open(`http://localhost:${port}`);
+//   }
+// });
+

@@ -43,6 +43,8 @@ class PudoApi {
             resolve(currentLocation);
           })
             .catch(err => reject(err));
+        }, (err) => {
+          console.log(err);
         });
       } else reject(false);
     });
