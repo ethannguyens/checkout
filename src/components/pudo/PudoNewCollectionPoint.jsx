@@ -54,8 +54,6 @@ class PudoNewCollectionPoint extends React.Component {
         postcode: ''
       };
 
-      console.log(currentLocation);
-
       this.props.actions.updatePudoCurrentLocation(currentLocation);
     });
   }
@@ -87,7 +85,7 @@ class PudoNewCollectionPoint extends React.Component {
           <span className="pudoNewCollectionPoint__close" onClick={this.deactivateAddCollectionPoint}/>
         </div>
         <div className="pudoNewCollectionPoint__body">
-          {this.props.pudo.isDisplayPostcodeInput && this.displayPostcodeInput()}
+          {this.displayPostcodeInput()}
           {this.props.pudo.isDisplayCollectionPointInfo &&
           <PudoNewCollectionPointInfo no={this.props.pudo.displayCollectionPoint}
                                       backFunc={this.props.actions.deactivateDisplayCollectionPointInfo}
