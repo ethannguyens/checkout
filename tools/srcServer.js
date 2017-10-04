@@ -8,10 +8,12 @@ import open from 'open';
 let fs = require('fs');
 let http = require('http');
 let https = require('https');
-let privateKey  = fs.readFileSync(path.join( __dirname, '../localhost-ssl/key.pem'), 'utf8');
-let certificate = fs.readFileSync(path.join( __dirname, '../localhost-ssl/cert.pem'), 'utf8');
+let privateKey  = fs.readFileSync(path.join( __dirname, '../localhost-ssl/key.pem'));
+let certificate = fs.readFileSync(path.join( __dirname, '../localhost-ssl/cert.pem'));
+let ca = fs.readFileSync(path.join( __dirname, '../localhost-ssl/Certificates.pem'));
 
-let credentials = {key: privateKey, cert: certificate};
+let credentials = {ca:ca, key: privateKey, cert: certificate, requestCert: false,
+  rejectUnauthorized: false};
 /* eslint-disable no-console */
 process.env.NODE_ENV = 'dev';
 

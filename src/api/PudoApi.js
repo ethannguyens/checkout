@@ -31,9 +31,16 @@ class PudoApi {
   }
 
   static getCurrentLocation() {
+    console.log("geolocation" in navigator);
     return new Promise((resolve, reject) => {
       if ("geolocation" in navigator) {
+        const options = {
+          enableHighAccuracy: true,
+          timeout: 5000,
+          maximumAge: 0
+        };
         navigator.geolocation.getCurrentPosition((position) => {
+          console.log(position);
           let currentLocation = {};
           currentLocation['latlng'] = {lat: position.coords.latitude, lng: position.coords.longitude};
 
@@ -45,7 +52,7 @@ class PudoApi {
             .catch(err => reject(err));
         }, (err) => {
           console.log(err);
-        });
+        }, options);
       } else reject(false);
     });
   }
