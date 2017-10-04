@@ -23,11 +23,13 @@ class PudoNewCollectionPoint extends React.Component {
     this.componentDidMount = this.componentDidMount.bind(this);
     this.getCurrentLocation = this.getCurrentLocation.bind(this);
     this.clearInput = this.clearInput.bind(this);
+    this.componentDidMount = this.componentDidMount.bind(this);
   }
 
   deactivateAddCollectionPoint() {
-    this.props.actions.deactivateAddCollectionPoint();
+    this.props.actions.hidePudoCollectionPoints();
     document.body.removeAttribute('pudo');
+
   }
 
   footer() {
@@ -71,13 +73,13 @@ class PudoNewCollectionPoint extends React.Component {
   }
 
   displayPostcodeInput() {
-    console.log(this.props.pudo.currentLocation.postcode)
     return (
       <div className={`pudoNewCollectionPoint__body-info ${this.customClass()}`}>
         <div className="pudoNewCollectionPoint__body-info-interact">
           <div className="pudoNewCollectionPoint__body-info-highlight">Find your nearby collection points</div>
           <div className="pudoNewCollectionPoint__body-info-location" onClick={this.clearInput}>
-            <img src={pudoLocationImg} className="pudoNewCollectionPoint__body-info-location-current" onClick={this.getCurrentLocation}></img>
+            <img src={pudoLocationImg} className="pudoNewCollectionPoint__body-info-location-current"
+                 onClick={this.getCurrentLocation}></img>
             <input type="text"
                    placeholder={this.props.pudo.currentLocation.postcode ? this.props.pudo.currentLocation.postcode : "Enter location"}
                    className="pudoNewCollectionPoint__body-info-input"/>
@@ -90,7 +92,12 @@ class PudoNewCollectionPoint extends React.Component {
   }
 
   customClass() {
-    if (!this.props.pudo.isDisplayCollectionPointInfo) return "isNotDisplayCollectionPointInfo";
+    let customClass = '';
+
+    if (!this.props.pudo.isDisplayCollectionPointInfo) customClass += " isNotDisplayCollectionPointInfo";
+    if (this.props.pudo.hideCollectionPoint) customClass += " inactive";
+
+    return customClass;
   }
 
   render() {

@@ -26,10 +26,20 @@ export function getPudoCollectionPointsSuccess(collectionPoints) {
 export function updatetPudoCollectionPointsSuccess(collectionPoints) {
   return {type: types.UPDATE_PUDO_COLLECTION_POINTS_SUCCESS, collectionPoints};
 }
+
+//Hide Collection Point
+export function hidePudoCollectionPoints() {
+  const hideCollectionPoint = true;
+  return {type: types.HIDE_ADD_COLLECTION_POINT_SUCESS, hideCollectionPoint};
+}
+
 //Open Add new collection point menu
 export function activateAddCollectionPoint() {
-  const isAddCollectionPoint = true;
-  return {type: types.ACTIVATE_ADD_COLLECTION_POINT_SUCESS, isAddCollectionPoint};
+  const newState = {
+    isAddCollectionPoint : true,
+    hideCollectionPoint: false
+  };
+  return {type: types.ACTIVATE_ADD_COLLECTION_POINT_SUCESS, newState};
 }
 
 export function deactivateAddCollectionPoint() {

@@ -6,6 +6,7 @@ export default {
       address: '',
       postcode: ''
     },
+    hideCollectionPoint: false,
     isAddCollectionPoint: false,
     isDisplayPostcodeInput: true,
     isDisplayCollectionPointInfo: false,

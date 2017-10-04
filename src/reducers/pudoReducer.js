@@ -13,7 +13,7 @@ export default function pudoReducer(state = initialState.pudo, action) {
       return Object.assign({}, state, {collectionPoints: action.collectionPoints});
 
     case types.ACTIVATE_ADD_COLLECTION_POINT_SUCESS:
-      return Object.assign({}, state, {isAddCollectionPoint: action.isAddCollectionPoint});
+      return Object.assign({}, state, action.newState);
 
     case types.DEACTIVATE_ADD_COLLECTION_POINT_SUCCESS:
       return Object.assign({}, state, {isAddCollectionPoint: action.isAddCollectionPoint});
@@ -24,12 +24,14 @@ export default function pudoReducer(state = initialState.pudo, action) {
     case types.LEAVE_COLLECTION_POINT:
       return Object.assign({}, state, {activeCollectionPoint: action.key});
 
-
     case types.ACTIVATE_DISPLAY_COLLECTION_POINT_INFO_SUCCESS:
       return Object.assign({}, state, {isDisplayCollectionPointInfo: action.isDisplayCollectionPointInfo});
 
     case types.DISPLAY_COLLECTION_POINT_SUCCESS:
       return Object.assign({}, state, action.point);
+
+    case types.HIDE_ADD_COLLECTION_POINT_SUCESS:
+      return Object.assign({}, state, {hideCollectionPoint: action.hideCollectionPoint});
 
     case types.DEACTIVATE_DISPLAY_COLLECTION_POINT_INFO_SUCCESS:
       action.newState.mapCenter = state.latlng;

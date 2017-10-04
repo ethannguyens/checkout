@@ -10,6 +10,9 @@
   background: #fff;
   z-index: 9;
 }
+.pudoNewCollectionPoint.inactive {
+  display: none;
+}
 
 .pudoNewCollectionPoint__header {
   height: 50px;
@@ -70,7 +73,7 @@
 
 .pudoNewCollectionPoint__body-info-location {
   height: 44px;
-  width: 94%;
+  width: 100%;
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 6px 0px inset;
   font-size: 14px;
@@ -94,7 +97,7 @@
   border-radius: 2px;
   height: 44px;
   background-color: #ffffff;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.43;
   letter-spacing: 0.2px;
   text-align: left;
@@ -103,7 +106,7 @@
   border: none;
   display: inline-block;
   outline: none;
-  width: 75%;
+  width: 79%;
 }
 
 .pudoNewCollectionPoint__body-info-footer {
@@ -362,6 +365,7 @@
   bottom: 0;
 }
 
+
 .pudoNewCollectionPoint__body-info {
   display: none;
 }
@@ -384,3 +388,13 @@
     width: 300px;
   }
 }
+
+//remove google logo
+.hdpi.pac-logo:after {
+  display: none;
+}
+
+.gm-style-cc {
+  display: none;
+}
+

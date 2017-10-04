@@ -5,7 +5,6 @@ import {bindActionCreators} from 'redux';
 import * as pudoActions from '../../actions/pudoActions';
 import PudoSavedAddresses from './PudoSavedAddresses';
 import PudoNewCollectionPoint from './PudoNewCollectionPoint';
-import PudoNewCollectionPointInfo from './PudoNewCollectionPointInfo';
 
 import './pudo.scss';
 
@@ -42,7 +41,7 @@ Pudo.propTypes = {
 };
 
 
-function mapStateToProps(state, ownProps) {
+function mapStateToProps(state) {
   return {
     pudo: state.pudo
   };
