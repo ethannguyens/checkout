@@ -17,8 +17,6 @@ class PudoNewCollectionPoint extends React.Component {
   constructor(props, context) {
     super(props, context);
 
-    this.props.actions.getCurrentLocationCollectionPoints();
-
     this.deactivateAddCollectionPoint = this.deactivateAddCollectionPoint.bind(this);
     this.footer = this.footer.bind(this);
     this.customClass = this.customClass.bind(this);

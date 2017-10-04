@@ -31,7 +31,6 @@ class PudoApi {
   }
 
   static getCurrentLocation() {
-    console.log("geolocation" in navigator);
     return new Promise((resolve, reject) => {
       if ("geolocation" in navigator) {
         const options = {
@@ -40,7 +39,6 @@ class PudoApi {
           maximumAge: 0
         };
         navigator.geolocation.getCurrentPosition((position) => {
-          console.log(position);
           let currentLocation = {};
           currentLocation['latlng'] = {lat: position.coords.latitude, lng: position.coords.longitude};
 

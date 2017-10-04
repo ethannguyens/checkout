@@ -75,7 +75,6 @@ export function updateCurrentLoationCollectionPoints() {
 export function getPudoCurrentLocation() {
   return dispatch => {
     return PudoApi.getCurrentLocation().then(currentLocation => {
-      console.log(currentLocation);
       dispatch(getPudoCurrentLocationSuccess(currentLocation));
     }).catch(error => {
       console.log(error);

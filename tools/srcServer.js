@@ -8,12 +8,13 @@ import open from 'open';
 let fs = require('fs');
 let http = require('http');
 let https = require('https');
-// let privateKey  = fs.readFileSync(path.join( __dirname, '../localhost-ssl/key.pem'));
-// let certificate = fs.readFileSync(path.join( __dirname, '../localhost-ssl/cert.pem'));
-// let ca = fs.readFileSync(path.join( __dirname, '../localhost-ssl/Certificates.pem'));
+let privateKey = fs.readFileSync(path.join(__dirname, '../localhost-ssl/localhost.key'));
+let certificate = fs.readFileSync(path.join(__dirname, '../localhost-ssl/localhost.crt'));
 
-let credentials = {requestCert: false,
-  rejectUnauthorized: false};
+let credentials = {
+  key: privateKey, cert: certificate, requestCert: false,
+  rejectUnauthorized: false
+};
 /* eslint-disable no-console */
 process.env.NODE_ENV = 'dev';
 
@@ -28,8 +29,8 @@ app.use(require('webpack-dev-middleware')(compiler, {
 
 app.use(require('webpack-hot-middleware')(compiler));
 
-app.get('*', function(req, res) {
-  res.sendFile(path.join( __dirname, '../src/index.html'));
+app.get('*', function (req, res) {
+  res.sendFile(path.join(__dirname, '../src/index.html'));
 });
 
 let httpServer = http.createServer(app);

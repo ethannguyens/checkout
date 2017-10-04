@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="528791f4-4ef4-48db-a7f0-215c3a4e4152" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/pudoActions.js" afterPath="$PROJECT_DIR$/src/actions/pudoActions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/api/PudoApi.js" afterPath="$PROJECT_DIR$/src/api/PudoApi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.jsx" afterPath="$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/srcServer.js" afterPath="$PROJECT_DIR$/tools/srcServer.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,7 +26,7 @@
     <favorites_list name="checkout" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5387994">
+    <splitter split-orientation="horizontal" split-proportion="0.6039531">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="Pudo.jsx" pinned="false" current-in-tab="false">
@@ -37,26 +41,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="PudoNewCollectionPoint.jsx" pinned="false" current-in-tab="false">
+          <file leaf-file-name="PudoNewCollectionPoint.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="381">
-                  <caret line="65" column="49" lean-forward="false" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
+                <state relative-caret-position="464">
+                  <caret line="48" column="65" lean-forward="false" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="65" />
                   <folding>
                     <element signature="e#0#25#0" expanded="true" />
-                    <marker date="1507041974000" expanded="true" signature="2505:3129" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PudoApi.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/api/PudoApi.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="363">
-                  <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#46#0" expanded="true" />
+                    <marker date="1507114597000" expanded="true" signature="2443:3067" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -76,11 +68,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="srcServer.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="srcServer.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tools/srcServer.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+                <state relative-caret-position="377">
+                  <caret line="40" column="34" lean-forward="true" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
                   <folding>
                     <element signature="e#0#30#0" expanded="true" />
                   </folding>
@@ -88,24 +80,24 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="testSetup.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tools/testSetup.js">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="212">
-                  <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
+                <state relative-caret-position="165">
+                  <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="pudoActions.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/actions/pudoActions.js">
+          <file leaf-file-name="testSetup.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/tools/testSetup.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="513">
-                  <caret line="53" column="35" lean-forward="true" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
-                  <folding />
+                <state relative-caret-position="212">
+                  <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -129,7 +121,6 @@
       <find>bind</find>
       <find>deactivateAddCollectionPoint</find>
       <find>activateAddCollectionPoint</find>
-      <find>console.log</find>
       <find>func</find>
       <find>interact</find>
       <find>left</find>
@@ -144,8 +135,9 @@
       <find>3000</find>
       <find>ACTIVATE_ADD_COLLECTION_POINT_SUCESS</find>
       <find>var</find>
-      <find>console.lo</find>
       <find>DISPLAY_COLLECTION_POINT_SUCCESS</find>
+      <find>console.log</find>
+      <find>console.lo</find>
     </findStrings>
     <replaceStrings>
       <replace>textIt</replace>
@@ -162,8 +154,8 @@
       <replace>pudoNewCollectionPoint__body-info</replace>
       <replace>pudoAddCollectionPoint__body-info-highlight</replace>
       <replace>pudoAddCollectionPoint__body-info-footer</replace>
-      <replace>let</replace>
       <replace>pudoNewCollectionPoint</replace>
+      <replace>let</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -208,21 +200,21 @@
         <option value="$PROJECT_DIR$/src/reducers/initialState.js" />
         <option value="$PROJECT_DIR$/src/components/pudo/PudoCollectionPointRow.jsx" />
         <option value="$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPointInfo.jsx" />
-        <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/actions/actionTypes.js" />
         <option value="$PROJECT_DIR$/src/reducers/pudoReducer.js" />
-        <option value="$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.jsx" />
         <option value="$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.scss" />
-        <option value="$PROJECT_DIR$/src/actions/pudoActions.js" />
         <option value="$PROJECT_DIR$/tools/distServer.js" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/tools/httpsServer.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/api/PudoApi.js" />
         <option value="$PROJECT_DIR$/localhost-ssl/cert.pem" />
         <option value="$PROJECT_DIR$/localhost-ssl/key.pem" />
         <option value="$PROJECT_DIR$/tools/srcServer.js" />
+        <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/actions/pudoActions.js" />
+        <option value="$PROJECT_DIR$/src/api/PudoApi.js" />
+        <option value="$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.jsx" />
       </list>
     </option>
   </component>
@@ -273,6 +265,16 @@
             <path>
               <item name="checkout" type="b2602c69:ProjectViewProjectNode" />
               <item name="checkout" type="462c0819:PsiDirectoryNode" />
+              <item name="localhost-ssl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="checkout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="checkout" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="checkout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="checkout" type="462c0819:PsiDirectoryNode" />
               <item name="tools" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -308,11 +310,11 @@
       <recent name="$PROJECT_DIR$/src/components/pudo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/localhost-ssl" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/tools" />
       <recent name="$PROJECT_DIR$/src/modules" />
       <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -415,7 +417,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145332000" />
+    <option name="totallyTimeSpent" value="146447000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="755" y="-1057" width="1920" height="1057" extended-state="6" />
@@ -486,7 +488,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/modules/geo-location.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/google-maps/lib/Google.js" />
     <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -592,6 +593,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -628,14 +630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="82">
           <caret line="149" column="5" lean-forward="false" selection-start-line="149" selection-start-column="5" selection-end-line="149" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="116" lean-forward="false" selection-start-line="5" selection-start-column="116" selection-end-line="5" selection-end-column="116" />
           <folding />
         </state>
       </provider>
@@ -804,39 +798,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="65" column="49" lean-forward="false" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-            <marker date="1507041974000" expanded="true" signature="2505:3129" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/PudoApi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/pudoActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="53" column="35" lean-forward="true" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -865,22 +830,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/localhost-ssl/localhost.crt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/srcServer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="40" column="34" lean-forward="true" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/pudoActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="96" column="17" lean-forward="false" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tools/testSetup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools/srcServer.js">
+    <entry file="file://$PROJECT_DIR$/src/api/PudoApi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        <state relative-caret-position="90">
+          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pudo/PudoNewCollectionPoint.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="48" column="65" lean-forward="false" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+            <marker date="1507114597000" expanded="true" signature="2443:3067" ph="..." />
           </folding>
         </state>
       </provider>
