@@ -22,6 +22,7 @@ class PudoNewCollectionPoint extends React.Component {
     this.customClass = this.customClass.bind(this);
     this.componentDidMount = this.componentDidMount.bind(this);
     this.getCurrentLocation = this.getCurrentLocation.bind(this);
+    this.clearInput = this.clearInput.bind(this);
   }
 
   deactivateAddCollectionPoint() {
@@ -64,12 +65,18 @@ class PudoNewCollectionPoint extends React.Component {
     this.props.actions.getCurrentLocationCollectionPoints();
   }
 
+  clearInput() {
+    const input = document.querySelector(".pudoNewCollectionPoint__body-info-input");
+    if (input.value) input.value = "";
+  }
+
   displayPostcodeInput() {
+    console.log(this.props.pudo.currentLocation.postcode)
     return (
       <div className={`pudoNewCollectionPoint__body-info ${this.customClass()}`}>
         <div className="pudoNewCollectionPoint__body-info-interact">
           <div className="pudoNewCollectionPoint__body-info-highlight">Find your nearby collection points</div>
-          <div className="pudoNewCollectionPoint__body-info-location">
+          <div className="pudoNewCollectionPoint__body-info-location" onClick={this.clearInput}>
             <img src={pudoLocationImg} className="pudoNewCollectionPoint__body-info-location-current" onClick={this.getCurrentLocation}></img>
             <input type="text"
                    placeholder={this.props.pudo.currentLocation.postcode ? this.props.pudo.currentLocation.postcode : "Enter location"}
