@@ -32,6 +32,24 @@ class PudoNewCollectionPoint extends React.Component {
 
   }
 
+  customClass() {
+    let customClass = '';
+
+    if (!this.props.pudo.isDisplayCollectionPointInfo) customClass += " isNotDisplayCollectionPointInfo";
+    if (this.props.pudo.hideCollectionPoint) customClass += " inactive";
+
+    return customClass;
+  }
+
+  getCurrentLocation() {
+    this.props.actions.getCurrentLocationCollectionPoints();
+  }
+
+  clearInput() {
+    const input = document.querySelector(".pudoNewCollectionPoint__body-info-input");
+    if (input.value) input.value = "";
+  }
+
   footer() {
     if (this.props.pudo.collectionPoints.length > 0) return (
       <div className="pudoNewCollectionPoint__body-info-footer">
@@ -63,15 +81,6 @@ class PudoNewCollectionPoint extends React.Component {
     });
   }
 
-  getCurrentLocation() {
-    this.props.actions.getCurrentLocationCollectionPoints();
-  }
-
-  clearInput() {
-    const input = document.querySelector(".pudoNewCollectionPoint__body-info-input");
-    if (input.value) input.value = "";
-  }
-
   displayPostcodeInput() {
     return (
       <div className={`pudoNewCollectionPoint__body-info ${this.customClass()}`}>
@@ -91,14 +100,6 @@ class PudoNewCollectionPoint extends React.Component {
     )
   }
 
-  customClass() {
-    let customClass = '';
-
-    if (!this.props.pudo.isDisplayCollectionPointInfo) customClass += " isNotDisplayCollectionPointInfo";
-    if (this.props.pudo.hideCollectionPoint) customClass += " inactive";
-
-    return customClass;
-  }
 
   render() {
     return (
