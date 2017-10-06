@@ -1,8 +1,6 @@
 import PudoApi from '../api/PudoApi';
 import * as types from './actionTypes';
 import {beginAjaxCall} from './ajaxStatusActions';
-import {ENTER_COLLECTION_POINT} from "./actionTypes";
-import {LEAVE_COLLECTION_POINT} from "./actionTypes";
 
 const mapZoomDisplay = 15;
 const mapZoomDefault = 11;
@@ -49,12 +47,12 @@ export function deactivateAddCollectionPoint() {
 
 //Hover
 export function enterCollectionPoint(key) {
-  return {type: ENTER_COLLECTION_POINT, key};
+  return {type: types.ENTER_COLLECTION_POINT, key};
 }
 
 export function leaveCollectionPoint() {
   const key = -1;
-  return {type: LEAVE_COLLECTION_POINT, key}
+  return {type: types.LEAVE_COLLECTION_POINT, key};
 }
 
 export function loadPudoSavedAddresses() {
@@ -79,7 +77,7 @@ export function updateCurrentLoationCollectionPoints() {
     return dispatch => {
       dispatch();
       dispatch();
-    }
+    };
 }
 
 export function getPudoCurrentLocation() {
@@ -96,7 +94,7 @@ export function getPudoCurrentLocation() {
 export function updatePudoCurrentLocation(currentLocation) {
     return dispatch => {
       dispatch(getPudoCurrentLocationSuccess(currentLocation));
-    }
+    };
 }
 
 export function getPudoLocationPoints() {
@@ -140,5 +138,5 @@ export function displayCollectionPointInfo(key, point) {
     const center = {lat: point.latitude, lng: point.longitude};
 
     dispatch(displayCollectionPoint(key, center));
-  }
+  };
 }
